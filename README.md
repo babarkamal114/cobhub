@@ -1,114 +1,81 @@
-# Cobhub - Modern Component Library
+---
+# CobHub Documentation
+A team collaboration and productivity platform.
+---
 
-A modern, accessible, and customizable component library built with Next.js 15, TypeScript, and Tailwind CSS.
+CobHub is a team collaboration and productivity platform designed to streamline communication, task management, and scheduling for agile teams.
 
 ## Features
 
-- 🎨 Modern and accessible components
-- 📦 Built with Next.js 15 and TypeScript
-- 🎯 Class Variance Authority (CVA) for component variants
-- 📚 Storybook for component documentation and testing
-- 🎭 Dark mode support
-- 🎨 Tailwind CSS for styling
-- ♿️ Accessible components following WAI-ARIA guidelines
+- **Team Communication** – Chat and collaborate in real-time.
+- **Agile Board** – Manage tasks with an intuitive Kanban board.
+- **Calendar & Scheduling** – Plan and schedule meetings effortlessly.
+- **Video Meetings** – Host and attend virtual meetings.
+- **File Storage & Sharing** – Securely upload and share files.
+- **Daily Stand-ups** – Track progress and blockers with stand-up reports.
+- **Payroll & Holiday Booking** – Manage employee payroll and time off.
+- **Team Availability Tracking** – Monitor team schedules and workload.
+- **Performance Evaluation** – Assess and improve team efficiency.
+- **AI-Powered Task Automation** – Automate task creation and assignments from uploaded documents.
+
+## Tech Stack
+
+- **Frontend**: Next.js, React, Tailwind CSS
+- **Backend**: Node.js (Planned)
+- **Database**: PostgreSQL / MongoDB (TBD)
+- **Authentication**: NextAuth.js / Firebase Auth
+- **Cloud & Storage**: AWS S3, AWS Lambda
+- **Real-time Communication**: WebSockets / Firebase Realtime Database
+- **Task Automation**: AI-powered NLP processing
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 18.17 or later
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
 ```bash
+Node.js 18+
+Yarn or npm
+```
+## Installation
+
+```bash
+# Clone the repository
 git clone https://github.com/yourusername/cobhub.git
+
+# Navigate to the project folder
 cd cobhub
+
+# Install dependencies
+yarn install  # or npm install
 ```
 
-2. Install dependencies:
-```bash
-npm install
-# or
-yarn install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-4. Start Storybook:
-```bash
-npm run storybook
-# or
-yarn storybook
-```
-
-## Component Library
-
-### Available Components
-
-- Button
-- Input
-- Checkbox
-- Alert
-- (More components coming soon)
-
-### Usage
-
-```tsx
-import { Button } from "@/components/ui/button";
-
-export default function MyComponent() {
-  return (
-    <Button variant="default" size="lg">
-      Click me
-    </Button>
-  );
-}
-```
-
-## Development
-
-### Project Structure
-
-```
-src/
-├── components/
-│   └── ui/           # Reusable UI components
-├── lib/
-│   └── utils.ts      # Utility functions
-├── stories/          # Storybook stories
-└── app/             # Next.js app directory
-```
-
-### Adding New Components
-
-1. Create a new component in `src/components/ui/`
-2. Create corresponding stories in `src/stories/`
-3. Add tests in `__tests__/` directory
-4. Document the component in Storybook
-
-### Testing
+## Running the Project
 
 ```bash
-npm run test
-# or
-yarn test
+# Start the development server
+yarn dev  # or npm run dev
 ```
 
-## Contributing
+## Running Storybook
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+```bash
+yarn storybook  # or npm run storybook
+```
+
+## Contribution Guidelines
+
+1. Fork the repository.
+
+2. Create a new branch: git checkout -b feat/your-feature-name.
+
+3. Commit your changes: git commit -m "feat: add new feature".
+
+4. Push to the branch: git push origin feat/your-feature-name.
+
+5. Open a pull request.
 
 ## License
+This project is licensed under the MIT License.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+## Contact
+For questions or contributions, reach out via babarkamal114@gmail.com
