@@ -5,7 +5,6 @@ import { Slot } from "@radix-ui/react-slot";
 import { ButtonProps } from "types";
 import { LoaderCircle } from "lucide-react";
 
-
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
@@ -35,15 +34,17 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
     return (
       <Comp
-        className={cn(buttonVariants({
-          className,
-          color,
-          isDisabled: isButtonDisabled,
-          isLoading,
-          shape,
-          size,
-          variant,
-        }))}
+        className={cn(
+          buttonVariants({
+            className,
+            color,
+            isDisabled: isButtonDisabled,
+            isLoading,
+            shape,
+            size,
+            variant,
+          })
+        )}
         ref={ref}
         disabled={isButtonDisabled}
         role="button"
@@ -51,10 +52,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         aria-disabled={isButtonDisabled}
         aria-busy={isLoading}
         aria-label={ariaLabel}
-        {...(isLoading && loadingText
-          ? { "aria-describedby": loadingId }
-          : {}
-        )}
+        {...(isLoading && loadingText ? { "aria-describedby": loadingId } : {})}
         {...props}
       >
         {isLoading && (

@@ -5,7 +5,17 @@ import { BreadcrumbProps } from "types";
 import { breadcrumbVariants } from "variants";
 
 const Breadcrumb = React.forwardRef<HTMLElement, BreadcrumbProps>(
-  ({ asChild = false, className, color = "default", items, separator = "slash", ...props }, ref) => {
+  (
+    {
+      asChild = false,
+      className,
+      color = "default",
+      items,
+      separator = "slash",
+      ...props
+    },
+    ref
+  ) => {
     const Comp = asChild ? Slot : "nav";
     const separators: Record<string, string> = {
       slash: "/",
@@ -15,14 +25,22 @@ const Breadcrumb = React.forwardRef<HTMLElement, BreadcrumbProps>(
     };
 
     return (
-      <Comp className={cn("flex", className)} ref={ref} aria-label="Breadcrumb" {...props}>
+      <Comp
+        className={cn("flex", className)}
+        ref={ref}
+        aria-label="Breadcrumb"
+        {...props}
+      >
         <ol className="flex items-center space-x-2">
           {items.map((item, index) => {
             const Icon = item.icon;
             return (
               <li key={index} className={cn(breadcrumbVariants({ color }))}>
                 {item.href ? (
-                  <a href={item.href} className="flex items-center hover:text-current focus:text-current focus:outline-none focus:ring-2">
+                  <a
+                    href={item.href}
+                    className="flex items-center hover:text-current focus:text-current focus:outline-none focus:ring-2"
+                  >
                     {Icon && <Icon className="me-1 h-4 w-4" />}
                     <span>{item.title}</span>
                   </a>
@@ -32,7 +50,11 @@ const Breadcrumb = React.forwardRef<HTMLElement, BreadcrumbProps>(
                     {item.title}
                   </span>
                 )}
-                {index < items.length - 1 && <span className="mx-2" aria-hidden="true">{separators[separator]}</span>}
+                {index < items.length - 1 && (
+                  <span className="mx-2" aria-hidden="true">
+                    {separators[separator]}
+                  </span>
+                )}
               </li>
             );
           })}
