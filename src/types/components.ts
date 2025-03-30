@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { avatarVariants, buttonVariants } from "variants";
+import { avatarVariants, buttonVariants, inputVariants } from "variants";
 import { VariantProps } from "class-variance-authority";
 
 export interface AvatarProps extends VariantProps<typeof avatarVariants> {
@@ -24,6 +24,20 @@ export interface ButtonProps
     rightIcon?: React.ReactNode;
     shape?: Shape;
     size?: Size;
+}
+
+export interface InputProps
+  extends React.InputHTMLAttributes<HTMLInputElement>,
+    VariantProps<typeof inputVariants> {
+  leftIcon?: React.ReactNode;
+  rightIcon?: React.ReactNode;
+  error?: string;
+  success?: string;
+  showPasswordToggle?: boolean;
+  onClear?: () => void;
+  showClearButton?: boolean;
+  label?: string;
+  labelFor?: string;
 }
 
 export type Color = "default" | "contrast" | "muted" | "primary" | "info" | "success" | "warning" | "danger" | "violet" | "yellow";
