@@ -1,96 +1,92 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { Input } from "../components/ui/input";
-import { Search, Mail, Lock } from "lucide-react";
+import React from "react";
+import { Eye, EyeOff, X } from "lucide-react";
+import { Input } from "ui-components";
+import { InputProps } from "types";
 
-const meta: Meta<typeof Input> = {
+export default {
   title: "UI/Input",
   component: Input,
-  tags: ["autodocs"],
-};
-
-export default meta;
-type Story = StoryObj<typeof Input>;
-
-export const Default: Story = {
-  args: {
-    placeholder: "Enter text...",
+  argTypes: {
+    leftIcon: { control: 'node' },
+    rightIcon: { control: 'node' },
+    error: { control: 'text' },
+    success: { control: 'text' },
+    showPasswordToggle: { control: 'boolean' },
+    onClear: { action: 'onClear' },
+    showClearButton: { control: 'boolean' },
+    label: { control: 'text' },
+    labelFor: { control: 'text' },
   },
 };
 
-export const WithIcons: Story = {
-  render: () => (
-    <div className="space-y-4">
-      <Input
-        placeholder="Search..."
-        leftIcon={<Search className="h-4 w-4" />}
-      />
-      <Input
-        placeholder="Email"
-        leftIcon={<Mail className="h-4 w-4" />}
-      />
-      <Input
-        type="password"
-        placeholder="Password"
-        leftIcon={<Lock className="h-4 w-4" />}
-        showPasswordToggle
-      />
-    </div>
-  ),
-};
 
-export const Sizes: Story = {
-  render: () => (
-    <div className="space-y-4">
-      <Input inputSize="sm" placeholder="Small input" />
-      <Input inputSize="md" placeholder="Medium input" />
-      <Input inputSize="lg" placeholder="Large input" />
-    </div>
-  ),
-};
+const Template = (args: InputProps) => <Input {...args} />;
 
-export const States: Story = {
-  render: () => (
-    <div className="space-y-4">
-      <Input placeholder="Default state" />
-      <Input placeholder="Disabled state" disabled />
-      <Input placeholder="Error state" error="This field is required" />
-      <Input placeholder="Success state" success="Looks good!" />
-    </div>
-  ),
-};
+export const Default = () => (
+  <Input
+    label="Email Address"
+    labelFor="email"
+    type="email"
+  />
+);
 
-export const WithClearButton: Story = {
-  render: () => (
-    <div className="space-y-4">
-      <Input
-        placeholder="Type to clear..."
-        showClearButton
-        onClear={() => console.log("Clear clicked")}
-      />
-      <Input
-        placeholder="With left icon and clear"
-        leftIcon={<Search className="h-4 w-4" />}
-        showClearButton
-        onClear={() => console.log("Clear clicked")}
-      />
-    </div>
-  ),
-};
+export const WithError = () => (
+  <Input
+    label="Email Address"
+    labelFor="email-error"
+    type="email"
+    error="Invalid email address"
+    placeholder="Email address"
+  />
+);
 
-export const PasswordInput: Story = {
-  render: () => (
-    <div className="space-y-4">
-      <Input
-        type="password"
-        placeholder="Password with toggle"
-        showPasswordToggle
-      />
-      <Input
-        type="password"
-        placeholder="Password with error"
-        showPasswordToggle
-        error="Password must be at least 8 characters"
-      />
-    </div>
-  ),
-}; 
+export const WithSuccess = () => (
+  <Input
+    label="Email Address"
+    labelFor="email-success"
+    type="email"
+    success="Email address is valid"
+    placeholder="Email Address"
+  />
+);
+
+export const WithLeftIcon = () => (
+  <Input
+    label="Username"
+    labelFor="username"
+    type="text"
+    leftIcon={<X className="h-5 w-5" />}
+    placeholder="Username"
+  />
+);
+
+export const WithRightIcon = () => (
+  <Input
+    label="Password"
+    labelFor="password"
+    type="password"
+    rightIcon={<Eye className="h-5 w-5" />}
+    placeholder="Password"
+  />
+);
+
+export const WithPasswordToggle = () => (
+  <Input
+    label="Password"
+    labelFor="password-toggle"
+    type="password"
+    showPasswordToggle={true}
+    placeholder="Password"
+  />
+);
+
+export const WithClearButton = () => (
+  <Input
+    label="Search"
+    labelFor="search-clear"
+    type="text"
+    showClearButton={true}
+    value="Some text"
+    placeholder="Search"
+  />
+);
