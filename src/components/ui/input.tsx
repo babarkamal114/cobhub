@@ -1,9 +1,9 @@
+"use client";
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import { Eye, EyeOff, X } from "lucide-react";
 import { inputVariants } from "variants";
 import { InputProps } from "types";
-
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   (
@@ -34,7 +34,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         {label && (
           <label
             htmlFor={labelFor}
-            className="block text-sm font-medium text-gray-700 dark:text-gray-700 mb-1"
+            className="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-1"
           >
             {label}
           </label>
@@ -49,9 +49,15 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             id={labelFor}
             type={isPassword && showPassword ? "text" : type}
             className={cn(
-              inputVariants({ variant: error ? "error" : success ? "success" : variant, inputSize }),
+              inputVariants({
+                variant: error ? "error" : success ? "success" : variant,
+                inputSize,
+              }),
               leftIcon && "pl-10",
-              (rightIcon || showPasswordToggle || (showClearButton && hasValue)) && "pr-10",
+              (rightIcon ||
+                showPasswordToggle ||
+                (showClearButton && hasValue)) &&
+                "pr-10",
               className
             )}
             ref={ref}
