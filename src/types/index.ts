@@ -1,10 +1,11 @@
-import { AvatarProps, ButtonProps, Color, InputProps, Shape, Size, Variant } from "./components";
+import { AvatarProps, BreadcrumbProps, ButtonProps, Color, InputProps, Shape, Size, Variant } from "./components";
 import { Sizes } from "./theme";
 
-export type { 
+export type {
     AvatarProps,
     ButtonProps,
-    Color, 
+    BreadcrumbProps,
+    Color,
     InputProps,
     Shape,
     Size,
