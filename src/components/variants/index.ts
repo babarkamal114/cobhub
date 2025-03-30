@@ -1,4 +1,4 @@
-import avatarVariants from "./avatarVariants";
+import { avatarVariants } from "./avatarVariants";
 import { buttonVariants } from "./buttonVariants";
 import { typographyVariants } from "./typographyVariants";
 
