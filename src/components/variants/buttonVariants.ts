@@ -13,7 +13,11 @@ export const buttonVariants = cva(
         sm: "h-8 px-3 text-xs min-w-[4rem]",
         md: "h-10 px-4 text-sm min-w-[5rem]",
         lg: "h-12 px-6 text-base min-w-[6rem]",
-        icon: "h-10 w-10", 
+        xl: "h-14 px-8 text-lg min-w-[7rem]",
+        xs: "h-6 px-2 text-xxs min-w-[3rem]",
+        xxs: "h-5 px-1 text-xxxs min-w-[2.5rem]",
+        xxxs: "h-4 px-1 text-xxxs min-w-[2rem]",
+        icon: "h-10 w-10",
       },
       shape: {
         straight: "rounded-none",
@@ -31,6 +35,8 @@ export const buttonVariants = cva(
         success: "",
         warning: "",
         danger: "",
+        yellow: "",
+        violet: ""
       },
       isDisabled: {
         true: "opacity-70 cursor-not-allowed",

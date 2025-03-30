@@ -1,50 +1,82 @@
 "use client";
 
-import { avatarVariants } from "variants";
-import { ReactNode } from "react";
-import { VariantProps } from "class-variance-authority";
 import clsx from "clsx";
 import Image from "next/image";
+import { sizes, spacing } from "@/lib/utils/constants";
+import { Size, Shape, AvatarProps } from "types";
+import { avatarVariants } from "variants";
 
-interface AvatarProps extends VariantProps<typeof avatarVariants> {
-  src?: string;
-  text?: string;
-  alt?: string;
-  color?: string;
-  children?: ReactNode;
-}
 
 export const Avatar: React.FC<AvatarProps> = ({
   src,
-  text,
-  alt,
-  size,
-  shape,
-  mask,
-  color = "bg-gray-200 text-gray-700",
+  alt = "",
+  text = "?",
+  size = "md",
+  shape = "full",
+  color = "default",
+  overlaps = false,
+  className = "",
   children,
 }) => {
+  const hasImage = !!src;
+  const imageSize = sizes[size as Size] || sizes.md;
+
   return (
-    <div
-      className={clsx(avatarVariants({ size, shape, mask }), color, "overflow-hidden")}
-    >
-      {src ? (
-        <Image src={src} alt={alt || "Avatar"} fill className="object-cover" />
-      ) : text ? (
-        <span>{text}</span>
+    <div className={clsx(
+      avatarVariants({ size, shape, color, overlaps }),
+      hasImage ? "block" : "flex items-center justify-center",
+      className
+    )}>
+    
+      {hasImage ? (
+        <Image
+          src={src}
+          alt={alt}
+          width={imageSize}
+          height={imageSize}
+          className={clsx(
+            "block w-full",
+            shape === "rounded" && "rounded-md",
+            shape === "smooth" && "rounded-lg",
+            shape === "curved" && size !== "xxxs" && "rounded-xl",
+            shape === "curved" && size === "xxxs" && "rounded-lg",
+            shape === "full" && "rounded-full"
+          )}
+        />
       ) : (
-        children
+        <span className="relative font-sans font-normal">
+          {text}
+        </span>
       )}
+      {children}
     </div>
   );
 };
 
-export const AvatarGroup: React.FC<{ avatars: AvatarProps[] }> = ({ avatars }) => {
+export const AvatarGroup: React.FC<{
+  avatars: AvatarProps[];
+  size?: Size;
+  shape?: Shape;
+}> = ({
+  avatars,
+  size = "md",
+  shape = "full"
+}) => {
+  spacing
+
   return (
-    <div className="flex -space-x-2">
+    <div className={`flex ${spacing[size] || spacing.sm}`}>
       {avatars.map((avatar, index) => (
-        <Avatar key={index} {...avatar} />
+        <Avatar
+          key={index}
+          {...avatar}
+          size={avatar.size || size}
+          shape={avatar.shape || shape}
+          overlaps={true}
+        />
       ))}
     </div>
   );
 };
+
+export default Avatar;

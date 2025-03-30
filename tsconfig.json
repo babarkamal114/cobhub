@@ -22,6 +22,7 @@
       "@/*": ["./src/*"],
       "ui-components": ["./src/components/ui"],
       "variants": ["./src/components/variants"],
+      "types": ["./src/types"],
     }
   },
   "include": [
