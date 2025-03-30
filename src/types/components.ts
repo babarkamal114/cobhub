@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { avatarVariants, buttonVariants, inputVariants } from "variants";
 import { VariantProps } from "class-variance-authority";
+import { LucideIcon } from "lucide-react";
 
 export interface AvatarProps extends VariantProps<typeof avatarVariants> {
     src?: string;
@@ -39,6 +40,19 @@ export interface InputProps
   label?: string;
   labelFor?: string;
 }
+
+export interface BreadcrumbItem {
+    title: string;
+    href?: string;
+    icon?: LucideIcon;
+  }
+  
+  export interface BreadcrumbProps extends React.HTMLAttributes<HTMLElement> {
+    items: BreadcrumbItem[];
+    separator?: "slash" | "chevron" | "arrow" | "dot";
+    color?: Color
+    asChild?: boolean;
+  }
 
 export type Color = "default" | "contrast" | "muted" | "primary" | "info" | "success" | "warning" | "danger" | "violet" | "yellow";
 export type Shape = "straight" | "rounded" | "smooth" | "curved" | "full";
