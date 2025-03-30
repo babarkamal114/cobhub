@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../components/ui/button'; // Import your Button component
+import { Button } from 'ui-components';
 import {
   Circle,
   Square,
@@ -10,10 +10,9 @@ import {
   Info,
   ArrowRight
 } from 'lucide-react';
-import { cn } from "@/lib/utils";
 
 export default {
-  title: 'UI//Button',
+  title: 'UI/Button',
   component: Button,
   tags: ["autodocs"],
   argTypes: {

@@ -40,26 +40,26 @@ Yarn or npm
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/cobhub.git
+git clone https://github.com/babarkamal114/cobhub.git
 
 # Navigate to the project folder
 cd cobhub
 
 # Install dependencies
-yarn install  # or npm install
+yarn install or npm install
 ```
 
 ## Running the Project
 
 ```bash
 # Start the development server
-yarn dev  # or npm run dev
+yarn dev or npm run dev
 ```
 
 ## Running Storybook
 
 ```bash
-yarn storybook  # or npm run storybook
+yarn storybook or npm run storybook
 ```
 
 ## Contribution Guidelines
