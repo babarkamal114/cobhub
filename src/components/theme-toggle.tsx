@@ -1,20 +1,27 @@
 "use client";
-import React from "react";
-import { useTheme } from "hooks";
+import React, { useEffect, useState } from "react";
+import { useTheme as useNextTheme } from "next-themes";
 import { Sun, Moon } from "lucide-react";
 import { Button } from "ui-components";
 
 const ThemeSwitch = () => {
-  const { isDark, toggleTheme } = useTheme();
-  console.log(isDark);
-  console.log(toggleTheme);
+  const { theme, setTheme } = useNextTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const isDark = theme === "dark";
+
+  if (!mounted) return null;
 
   return (
     <div className="flex items-center gap-2">
       <Button
         variant="solid"
         size="sm"
-        onClick={toggleTheme}
+        onClick={() => setTheme(isDark ? "light" : "dark")}
         className="fixed top-4 right-4 z-50 flex items-center justify-center p-2 rounded-full transition-all"
         aria-label="Toggle theme"
       >
