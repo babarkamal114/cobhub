@@ -4,6 +4,7 @@ import {
   ButtonProps,
   Color,
   InputProps,
+  ModalProps,
   Shape,
   Size,
   Variant,
@@ -12,10 +13,11 @@ import { Sizes } from './theme';
 
 export type {
   AvatarProps,
-  ButtonProps,
   BreadcrumbProps,
+  ButtonProps,
   Color,
   InputProps,
+  ModalProps,
   Shape,
   Size,
   Sizes,
