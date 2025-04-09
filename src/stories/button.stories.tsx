@@ -1,5 +1,3 @@
-import React from 'react';
-import { Button } from 'ui-components';
 import {
   Circle,
   Square,
@@ -8,14 +6,17 @@ import {
   AlertTriangle,
   CheckCircle,
   Info,
-  ArrowRight
+  ArrowRight,
 } from 'lucide-react';
+import React from 'react';
+
 import { ButtonProps } from '@/types';
+import { Button } from 'ui-components';
 
 export default {
   title: 'UI/Button',
   component: Button,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   argTypes: {
     variant: {
       control: 'select',
@@ -31,16 +32,7 @@ export default {
     },
     color: {
       control: 'select',
-      options: [
-        'default',
-        'contrast',
-        'muted',
-        'primary',
-        'info',
-        'success',
-        'warning',
-        'danger',
-      ],
+      options: ['default', 'contrast', 'muted', 'primary', 'info', 'success', 'warning', 'danger'],
     },
     isDisabled: { control: 'boolean' },
     isLoading: { control: 'boolean' },
@@ -59,7 +51,7 @@ export default {
     isDisabled: false,
     isLoading: false,
     asChild: false,
-    loadingText: "Loading..."
+    loadingText: 'Loading...',
   },
 };
 
@@ -71,14 +63,30 @@ export const SolidVariants = () => (
   <div className="space-y-4">
     <h2 className="text-lg font-semibold">Solid Variants</h2>
     <div className="flex flex-wrap gap-4">
-      <Button variant="solid" color="default">Default</Button>
-      <Button variant="solid" color="contrast">Contrast</Button>
-      <Button variant="solid" color="muted">Muted</Button>
-      <Button variant="solid" color="primary">Primary</Button>
-      <Button variant="solid" color="info">Info</Button>
-      <Button variant="solid" color="success">Success</Button>
-      <Button variant="solid" color="warning">Warning</Button>
-      <Button variant="solid" color="danger">Danger</Button>
+      <Button variant="solid" color="default">
+        Default
+      </Button>
+      <Button variant="solid" color="contrast">
+        Contrast
+      </Button>
+      <Button variant="solid" color="muted">
+        Muted
+      </Button>
+      <Button variant="solid" color="primary">
+        Primary
+      </Button>
+      <Button variant="solid" color="info">
+        Info
+      </Button>
+      <Button variant="solid" color="success">
+        Success
+      </Button>
+      <Button variant="solid" color="warning">
+        Warning
+      </Button>
+      <Button variant="solid" color="danger">
+        Danger
+      </Button>
     </div>
   </div>
 );
@@ -87,14 +95,30 @@ export const PastelVariants = () => (
   <div className="space-y-4">
     <h2 className="text-lg font-semibold">Pastel Variants</h2>
     <div className="flex flex-wrap gap-4">
-      <Button variant="pastel" color="default">Default</Button>
-      <Button variant="pastel" color="contrast">Contrast</Button>
-      <Button variant="pastel" color="muted">Muted</Button>
-      <Button variant="pastel" color="primary">Primary</Button>
-      <Button variant="pastel" color="info">Info</Button>
-      <Button variant="pastel" color="success">Success</Button>
-      <Button variant="pastel" color="warning">Warning</Button>
-      <Button variant="pastel" color="danger">Danger</Button>
+      <Button variant="pastel" color="default">
+        Default
+      </Button>
+      <Button variant="pastel" color="contrast">
+        Contrast
+      </Button>
+      <Button variant="pastel" color="muted">
+        Muted
+      </Button>
+      <Button variant="pastel" color="primary">
+        Primary
+      </Button>
+      <Button variant="pastel" color="info">
+        Info
+      </Button>
+      <Button variant="pastel" color="success">
+        Success
+      </Button>
+      <Button variant="pastel" color="warning">
+        Warning
+      </Button>
+      <Button variant="pastel" color="danger">
+        Danger
+      </Button>
     </div>
   </div>
 );
@@ -103,14 +127,30 @@ export const OutlinedVariants = () => (
   <div className="space-y-4">
     <h2 className="text-lg font-semibold">Outlined Variants</h2>
     <div className="flex flex-wrap gap-4">
-      <Button variant="outlined" color="default">Default</Button>
-      <Button variant="outlined" color="contrast">Contrast</Button>
-      <Button variant="outlined" color="muted">Muted</Button>
-      <Button variant="outlined" color="primary">Primary</Button>
-      <Button variant="outlined" color="info">Info</Button>
-      <Button variant="outlined" color="success">Success</Button>
-      <Button variant="outlined" color="warning">Warning</Button>
-      <Button variant="outlined" color="danger">Danger</Button>
+      <Button variant="outlined" color="default">
+        Default
+      </Button>
+      <Button variant="outlined" color="contrast">
+        Contrast
+      </Button>
+      <Button variant="outlined" color="muted">
+        Muted
+      </Button>
+      <Button variant="outlined" color="primary">
+        Primary
+      </Button>
+      <Button variant="outlined" color="info">
+        Info
+      </Button>
+      <Button variant="outlined" color="success">
+        Success
+      </Button>
+      <Button variant="outlined" color="warning">
+        Warning
+      </Button>
+      <Button variant="outlined" color="danger">
+        Danger
+      </Button>
     </div>
   </div>
 );
@@ -159,7 +199,9 @@ export const LoadingState = () => (
     <h2 className="text-lg font-semibold">Loading State</h2>
     <div className="flex flex-wrap gap-4">
       <Button isLoading>Loading</Button>
-      <Button isLoading loadingText="Fetching...">Loading...</Button>
+      <Button isLoading loadingText="Fetching...">
+        Loading...
+      </Button>
       <Button isLoading variant="outlined" color="primary">
         Loading...
       </Button>
@@ -174,9 +216,15 @@ export const WithIcons = () => (
   <div className="space-y-4">
     <h2 className="text-lg font-semibold">Buttons with Icons</h2>
     <div className="flex flex-wrap gap-4">
-      <Button variant="outlined" leftIcon={<Circle className="w-4 h-4" />}>Circle</Button>
+      <Button variant="outlined" leftIcon={<Circle className="w-4 h-4" />}>
+        Circle
+      </Button>
       <Button rightIcon={<Square className="w-4 h-4" />}>Square</Button>
-      <Button variant="pastel" leftIcon={<Heart className="w-4 h-4" />} rightIcon={<ArrowRight className="w-4 h-4" />}>
+      <Button
+        variant="pastel"
+        leftIcon={<Heart className="w-4 h-4" />}
+        rightIcon={<ArrowRight className="w-4 h-4" />}
+      >
         Heart
       </Button>
       <Button isLoading leftIcon={<Loader2 className="w-4 h-4" />}>
@@ -194,4 +242,3 @@ export const WithIcons = () => (
     </div>
   </div>
 );
-

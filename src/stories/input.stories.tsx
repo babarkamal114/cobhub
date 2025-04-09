@@ -1,10 +1,10 @@
-import React from "react";
-import { Eye, EyeOff, X } from "lucide-react";
-import { Input } from "ui-components";
-import { InputProps } from "types";
+import { Eye, X } from 'lucide-react';
+import React from 'react';
+
+import { Input } from 'ui-components';
 
 export default {
-  title: "UI/Input",
+  title: 'UI/Input',
   component: Input,
   argTypes: {
     leftIcon: { control: 'node' },
@@ -19,16 +19,7 @@ export default {
   },
 };
 
-
-const Template = (args: InputProps) => <Input {...args} />;
-
-export const Default = () => (
-  <Input
-    label="Email Address"
-    labelFor="email"
-    type="email"
-  />
-);
+export const Default = () => <Input label="Email Address" labelFor="email" type="email" />;
 
 export const WithError = () => (
   <Input

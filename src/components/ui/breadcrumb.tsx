@@ -1,36 +1,25 @@
-import * as React from "react";
-import { cn } from "@/lib/utils";
-import { Slot } from "@radix-ui/react-slot";
-import { BreadcrumbProps } from "types";
-import { breadcrumbVariants } from "variants";
+import { Slot } from '@radix-ui/react-slot';
+import * as React from 'react';
+
+import { cn } from '@/lib/utils';
+import { BreadcrumbProps } from 'types';
+import { breadcrumbVariants } from 'variants';
 
 const Breadcrumb = React.forwardRef<HTMLElement, BreadcrumbProps>(
   (
-    {
-      asChild = false,
-      className,
-      color = "default",
-      items,
-      separator = "slash",
-      ...props
-    },
+    { asChild = false, className, color = 'default', items, separator = 'slash', ...props },
     ref
   ) => {
-    const Comp = asChild ? Slot : "nav";
+    const Comp = asChild ? Slot : 'nav';
     const separators: Record<string, string> = {
-      slash: "/",
-      chevron: ">",
-      arrow: "→",
-      dot: "•",
+      slash: '/',
+      chevron: '>',
+      arrow: '→',
+      dot: '•',
     };
 
     return (
-      <Comp
-        className={cn("flex", className)}
-        ref={ref}
-        aria-label="Breadcrumb"
-        {...props}
-      >
+      <Comp className={cn('flex', className)} ref={ref} aria-label="Breadcrumb" {...props}>
         <ol className="flex items-center space-x-2">
           {items.map((item, index) => {
             const Icon = item.icon;
@@ -64,6 +53,6 @@ const Breadcrumb = React.forwardRef<HTMLElement, BreadcrumbProps>(
   }
 );
 
-Breadcrumb.displayName = "Breadcrumb";
+Breadcrumb.displayName = 'Breadcrumb';
 
 export { Breadcrumb, breadcrumbVariants };

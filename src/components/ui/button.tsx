@@ -1,14 +1,15 @@
-import * as React from "react";
-import { buttonVariants } from "variants";
-import { cn } from "@/lib/utils";
-import { Slot } from "@radix-ui/react-slot";
-import { ButtonProps } from "types";
-import { LoaderCircle } from "lucide-react";
+import { Slot } from '@radix-ui/react-slot';
+import { LoaderCircle } from 'lucide-react';
+import * as React from 'react';
+
+import { cn } from '@/lib/utils';
+import { ButtonProps } from 'types';
+import { buttonVariants } from 'variants';
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
-      "aria-label": ariaLabel,
+      'aria-label': ariaLabel,
       asChild = false,
       children,
       className,
@@ -21,13 +22,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       rightIcon,
       shape,
       size,
-      type = "button",
+      type = 'button',
       variant,
       ...props
     },
     ref
   ) => {
-    const Comp = asChild ? Slot : "button";
+    const Comp = asChild ? Slot : 'button';
     const isButtonDisabled = disabled || isDisabled || isLoading;
 
     const loadingId = React.useId();
@@ -52,7 +53,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         aria-disabled={isButtonDisabled}
         aria-busy={isLoading}
         aria-label={ariaLabel}
-        {...(isLoading && loadingText ? { "aria-describedby": loadingId } : {})}
+        {...(isLoading && loadingText ? { 'aria-describedby': loadingId } : {})}
         {...props}
       >
         {isLoading && (
@@ -80,6 +81,6 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     );
   }
 );
-Button.displayName = "Button";
+Button.displayName = 'Button';
 
 export { Button, buttonVariants };

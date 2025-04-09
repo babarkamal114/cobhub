@@ -1,20 +1,21 @@
-"use client";
+'use client';
 
-import clsx from "clsx";
-import Image from "next/image";
-import { sizes, spacing } from "@/lib/utils/constants";
-import { Size, Shape, AvatarProps } from "types";
-import { avatarVariants } from "variants";
+import clsx from 'clsx';
+import Image from 'next/image';
+
+import { sizes, spacing } from '@/lib/utils/constants';
+import { Size, Shape, AvatarProps } from 'types';
+import { avatarVariants } from 'variants';
 
 export const Avatar: React.FC<AvatarProps> = ({
   src,
-  alt = "",
-  text = "?",
-  size = "md",
-  shape = "full",
-  color = "default",
+  alt = '',
+  text = '?',
+  size = 'md',
+  shape = 'full',
+  color = 'default',
   overlaps = false,
-  className = "",
+  className = '',
   children,
 }) => {
   const hasImage = !!src;
@@ -24,7 +25,7 @@ export const Avatar: React.FC<AvatarProps> = ({
     <div
       className={clsx(
         avatarVariants({ size, shape, color, overlaps }),
-        hasImage ? "block" : "flex items-center justify-center",
+        hasImage ? 'block' : 'flex items-center justify-center',
         className
       )}
     >
@@ -35,12 +36,12 @@ export const Avatar: React.FC<AvatarProps> = ({
           width={imageSize}
           height={imageSize}
           className={clsx(
-            "block w-full",
-            shape === "rounded" && "rounded-md",
-            shape === "smooth" && "rounded-lg",
-            shape === "curved" && size !== "xxxs" && "rounded-xl",
-            shape === "curved" && size === "xxxs" && "rounded-lg",
-            shape === "full" && "rounded-full"
+            'block w-full',
+            shape === 'rounded' && 'rounded-md',
+            shape === 'smooth' && 'rounded-lg',
+            shape === 'curved' && size !== 'xxxs' && 'rounded-xl',
+            shape === 'curved' && size === 'xxxs' && 'rounded-lg',
+            shape === 'full' && 'rounded-full'
           )}
         />
       ) : (
@@ -55,7 +56,7 @@ export const AvatarGroup: React.FC<{
   avatars: AvatarProps[];
   size?: Size;
   shape?: Shape;
-}> = ({ avatars, size = "md", shape = "full" }) => {
+}> = ({ avatars, size = 'md', shape = 'full' }) => {
   return (
     <div className={`flex ${spacing[size] || spacing.sm}`}>
       {avatars.map((avatar, index) => (

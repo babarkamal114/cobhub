@@ -1,9 +1,10 @@
-"use client";
-import * as React from "react";
-import { cn } from "@/lib/utils";
-import { Eye, EyeOff, X } from "lucide-react";
-import { inputVariants } from "variants";
-import { InputProps } from "types";
+'use client';
+import { Eye, EyeOff, X } from 'lucide-react';
+import * as React from 'react';
+
+import { cn } from '@/lib/utils';
+import { InputProps } from 'types';
+import { inputVariants } from 'variants';
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   (
@@ -26,8 +27,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     ref
   ) => {
     const [showPassword, setShowPassword] = React.useState(false);
-    const isPassword = type === "password";
-    const hasValue = props.value !== undefined && props.value !== "";
+    const isPassword = type === 'password';
+    const hasValue = props.value !== undefined && props.value !== '';
 
     return (
       <div className="relative w-full">
@@ -47,17 +48,14 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           )}
           <input
             id={labelFor}
-            type={isPassword && showPassword ? "text" : type}
+            type={isPassword && showPassword ? 'text' : type}
             className={cn(
               inputVariants({
-                variant: error ? "error" : success ? "success" : variant,
+                variant: error ? 'error' : success ? 'success' : variant,
                 inputSize,
               }),
-              leftIcon && "pl-10",
-              (rightIcon ||
-                showPasswordToggle ||
-                (showClearButton && hasValue)) &&
-                "pr-10",
+              leftIcon && 'pl-10',
+              (rightIcon || showPasswordToggle || (showClearButton && hasValue)) && 'pr-10',
               className
             )}
             ref={ref}
@@ -79,11 +77,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
                 onClick={() => setShowPassword(!showPassword)}
                 className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
               >
-                {showPassword ? (
-                  <EyeOff className="h-4 w-4" />
-                ) : (
-                  <Eye className="h-4 w-4" />
-                )}
+                {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
               </button>
             )}
             {rightIcon && !showPasswordToggle && !showClearButton && (
@@ -92,12 +86,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           </div>
         </div>
         {(error || success) && (
-          <p
-            className={cn(
-              "mt-1 text-xs",
-              error ? "text-red-500" : "text-green-500"
-            )}
-          >
+          <p className={cn('mt-1 text-xs', error ? 'text-red-500' : 'text-green-500')}>
             {error || success}
           </p>
         )}
@@ -106,6 +95,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
   }
 );
 
-Input.displayName = "Input";
+Input.displayName = 'Input';
 
 export { Input, inputVariants };

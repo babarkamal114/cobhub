@@ -1,11 +1,12 @@
-import React, { type ButtonHTMLAttributes, type FC } from "react";
-import { cn } from "@/lib/utils";
-import type { VariantProps } from "class-variance-authority";
-import { buttonIconVariants } from "variants";
-import { LoaderCircle } from "lucide-react";
+import type { VariantProps } from 'class-variance-authority';
+import { LoaderCircle } from 'lucide-react';
+import React, { type ButtonHTMLAttributes, type FC } from 'react';
+
+import { cn } from '@/lib/utils';
+import { buttonIconVariants } from 'variants';
 
 interface IconButtonProps
-  extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "color">,
+  extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'color'>,
     VariantProps<typeof buttonIconVariants> {
   children?: React.ReactNode;
   loading?: boolean;
@@ -15,7 +16,7 @@ const IconButton: FC<IconButtonProps> = ({
   variant,
   color,
   shape,
-  size = "md",
+  size = 'md',
   className: classes,
   children,
   loading = false,
@@ -29,8 +30,8 @@ const IconButton: FC<IconButtonProps> = ({
     size,
     shape,
   })
-    .split(" ")
-    .find((cls) => cls.includes("text-") || cls.includes("bg-"));
+    .split(' ')
+    .find(cls => cls.includes('text-') || cls.includes('bg-'));
 
   return (
     <button
@@ -41,9 +42,7 @@ const IconButton: FC<IconButtonProps> = ({
           color,
           size,
         }),
-        `shrink-0 ${
-          loading ? "pointer-events-none relative !text-transparent" : ""
-        }`,
+        `shrink-0 ${loading ? 'pointer-events-none relative !text-transparent' : ''}`,
         classes
       )}
       disabled={isButtonDisabled}
