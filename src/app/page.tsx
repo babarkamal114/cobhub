@@ -1,5 +1,5 @@
 import ThemeSwitch from "@/components/theme-toggle";
-import { Input, Typography } from "ui-components";
+import { Typography } from "ui-components";
 
 export default function Home() {
   return (

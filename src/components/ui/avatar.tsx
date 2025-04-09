@@ -56,8 +56,6 @@ export const AvatarGroup: React.FC<{
   size?: Size;
   shape?: Shape;
 }> = ({ avatars, size = "md", shape = "full" }) => {
-  spacing;
-
   return (
     <div className={`flex ${spacing[size] || spacing.sm}`}>
       {avatars.map((avatar, index) => (

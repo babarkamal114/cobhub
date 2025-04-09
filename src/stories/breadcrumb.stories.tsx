@@ -29,6 +29,8 @@ export default {
 
 const BreadcrumbTemplate: StoryFn<typeof Breadcrumb> = (args) => <Breadcrumb {...args} />;
 
+export const Basic = BreadcrumbTemplate.bind({});
+
 const breadcrumbItems = [
   { title: "Home", href: "#", icon: Home },
   { title: "Projects", href: "#", icon: Folder },
