@@ -19,7 +19,6 @@ const ThemeSwitch = () => {
   return (
     <div className="flex items-center gap-2">
       <Button
-        variant="solid"
         size="sm"
         onClick={() => setTheme(isDark ? "light" : "dark")}
         className="fixed top-4 right-4 z-50 flex items-center justify-center p-2 rounded-full transition-all"

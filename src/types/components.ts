@@ -25,6 +25,7 @@ export interface ButtonProps
     rightIcon?: React.ReactNode;
     shape?: Shape;
     size?: Size;
+    variant?: Variant;
 }
 
 export interface InputProps
