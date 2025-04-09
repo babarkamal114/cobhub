@@ -1,6 +1,7 @@
 import {
   AvatarProps,
   BreadcrumbProps,
+  ButtonLinkProps,
   ButtonProps,
   Color,
   InputProps,
@@ -14,6 +15,7 @@ import { Sizes } from './theme';
 export type {
   AvatarProps,
   BreadcrumbProps,
+  ButtonLinkProps,
   ButtonProps,
   Color,
   InputProps,

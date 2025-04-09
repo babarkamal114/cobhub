@@ -12,25 +12,28 @@ export const avatarVariants = cva('relative flex shrink-0 items-center justify-c
       xxxs: 'w-6 h-6 text-[0.7rem]',
     },
     shape: {
-      straight: 'rounded-none',
-      rounded: 'rounded-md',
-      smooth: 'rounded-lg',
-      curved: ['rounded-xl', 'xxxs:rounded-lg'],
+      straight: 'rounded-straight',
+      rounded: 'rounded-rounded',
+      smooth: 'rounded-smooth',
+      curved: ['rounded-curved', 'xxxs:rounded-smooth'],
       full: 'rounded-full',
     },
     color: {
-      default: 'bg-gray-900 text-white hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700',
+      default:
+        'bg-default-solid text-white hover:bg-default-solid-hover dark:bg-default-solid dark:hover:bg-default-solid-hover',
       contrast:
         'bg-white text-gray-900 hover:bg-gray-200 dark:bg-gray-200 dark:text-gray-900 dark:hover:bg-gray-300',
       muted:
         'bg-gray-100 text-gray-900 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600',
-      primary: 'bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600',
+      primary:
+        'bg-primary-solid text-white hover:bg-primary-solid-hover dark:bg-primary-solid dark:hover:bg-primary-solid-hover',
       info: 'bg-cyan-600 text-white hover:bg-cyan-700 dark:bg-cyan-500 dark:hover:bg-cyan-600',
       success:
-        'bg-green-600 text-white hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-600',
+        'bg-success-solid text-white hover:bg-success-solid-hover dark:bg-success-solid dark:hover:bg-success-solid-hover',
       warning:
-        'bg-amber-600 text-white hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-600',
-      danger: 'bg-red-600 text-white hover:bg-red-700 dark:bg-red-500 dark:hover:bg-red-600',
+        'bg-warning-solid text-white hover:bg-warning-solid-hover dark:bg-warning-solid dark:hover:bg-warning-solid-hover',
+      danger:
+        'bg-danger-solid text-white hover:bg-danger-solid-hover dark:bg-danger-solid dark:hover:bg-danger-solid-hover',
       yellow:
         'bg-yellow-600 text-white hover:bg-yellow-700 dark:bg-yellow-500 dark:hover:bg-yellow-600',
       violet:

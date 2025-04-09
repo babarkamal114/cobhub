@@ -1,6 +1,6 @@
 import { VariantProps } from 'class-variance-authority';
 import { LucideIcon } from 'lucide-react';
-import { ReactNode } from 'react';
+import { ButtonHTMLAttributes, ReactNode } from 'react';
 
 import { avatarVariants, buttonVariants, inputVariants } from 'variants';
 
@@ -24,6 +24,19 @@ export interface ButtonProps
   leftIcon?: React.ReactNode;
   loadingText?: string;
   rightIcon?: React.ReactNode;
+  shape?: Shape;
+  size?: Size;
+  variant?: Variant;
+}
+
+export interface ButtonLinkProps
+  extends Omit<ButtonHTMLAttributes<HTMLAnchorElement>, 'color'>,
+    VariantProps<typeof buttonVariants> {
+  asChild?: boolean;
+  children?: React.ReactNode;
+  href: string;
+  loading?: boolean;
+  color?: Color;
   shape?: Shape;
   size?: Size;
   variant?: Variant;
