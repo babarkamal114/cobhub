@@ -56,6 +56,21 @@ export interface BreadcrumbProps extends React.HTMLAttributes<HTMLElement> {
   asChild?: boolean;
 }
 
+export interface ModalProps {
+  open?: boolean;
+  size?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl';
+  classes?: {
+    wrapper?: string | string[];
+    backdrop?: string | string[];
+    dialog?: string | string[];
+  };
+  children?: React.ReactNode;
+  onBackdropClick?: () => void;
+  onClose?: () => void;
+  title?: string;
+  description?: string;
+}
+
 export type Color =
   | 'default'
   | 'contrast'

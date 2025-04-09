@@ -3,7 +3,7 @@ import { Sun, Moon } from 'lucide-react';
 import { useTheme as useNextTheme } from 'next-themes';
 import React, { useEffect, useState } from 'react';
 
-import { Button } from 'ui-components';
+import { IconButton } from 'ui-components';
 
 const ThemeSwitch = () => {
   const { theme, setTheme } = useNextTheme();
@@ -19,8 +19,9 @@ const ThemeSwitch = () => {
 
   return (
     <div className="flex items-center gap-2">
-      <Button
+      <IconButton
         size="sm"
+        variant="pastel"
         onClick={() => setTheme(isDark ? 'light' : 'dark')}
         className="fixed top-4 right-4 z-50 flex items-center justify-center p-2 rounded-full transition-all"
         aria-label="Toggle theme"
@@ -36,7 +37,7 @@ const ThemeSwitch = () => {
           }`}
         />
         <span className="sr-only">Toggle theme</span>
-      </Button>
+      </IconButton>
     </div>
   );
 };

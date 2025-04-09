@@ -100,7 +100,7 @@ export const buttonIconVariants = cva(
         variant: 'outlined',
         color: 'default',
         className:
-          'border border-gray-500 text-gray-600 hover:bg-gray-50 focus-visible:ring-gray-400',
+          'border border-gray-500 dark:border-gray-200 text-gray-600 hover:bg-gray-50 focus-visible:ring-gray-400',
       },
       {
         variant: 'outlined',
