@@ -10,6 +10,7 @@ import {
   Info,
   ArrowRight
 } from 'lucide-react';
+import { ButtonProps } from '@/types';
 
 export default {
   title: 'UI/Button',
@@ -62,7 +63,7 @@ export default {
   },
 };
 
-const Template = (args: any) => <Button {...args} />;
+const Template = (args: ButtonProps) => <Button {...args} />;
 
 export const Basic = Template.bind({});
 

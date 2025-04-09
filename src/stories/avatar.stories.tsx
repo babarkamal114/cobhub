@@ -23,6 +23,8 @@ const Template = (args: AvatarProps) => {
     return <Avatar {...args} />;
 };
 
+export const Basic = Template.bind({});
+
 export const Default = () => (
     <Avatar size="sm" shape='full' text="XS" color="primary" />
 );

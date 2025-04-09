@@ -6,7 +6,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #a11e1e;
+  --foreground: #000000;
 }
 
 body {
@@ -15,4 +15,3 @@ body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
 }
-
