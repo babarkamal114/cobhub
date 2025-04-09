@@ -1,7 +1,8 @@
-import * as React from "react";
-import { cn } from "@/lib/utils";
-import { VariantProps } from "class-variance-authority";
-import { typographyVariants } from "@/components/variants/typographyVariants";
+import { VariantProps } from 'class-variance-authority';
+import * as React from 'react';
+
+import { typographyVariants } from '@/components/variants/typographyVariants';
+import { cn } from '@/lib/utils';
 
 interface TypographyProps
   extends React.HTMLAttributes<HTMLElement>,
@@ -10,17 +11,13 @@ interface TypographyProps
 }
 
 const Typography = React.forwardRef<HTMLElement, TypographyProps>(
-  ({ className, variant, as: Component = "p", ...props }, ref) => {
+  ({ className, variant, as: Component = 'p', ...props }, ref) => {
     return (
-      <Component
-        ref={ref}
-        className={cn(typographyVariants({ variant, className }))}
-        {...props}
-      />
+      <Component ref={ref} className={cn(typographyVariants({ variant, className }))} {...props} />
     );
   }
 );
 
-Typography.displayName = "Typography";
+Typography.displayName = 'Typography';
 
 export { Typography, typographyVariants };
