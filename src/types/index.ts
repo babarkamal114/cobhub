@@ -8,6 +8,7 @@ import {
   ModalProps,
   Shape,
   Size,
+  TrackTabsProps,
   Variant,
 } from './components';
 import { Sizes } from './theme';
@@ -23,5 +24,6 @@ export type {
   Shape,
   Size,
   Sizes,
+  TrackTabsProps,
   Variant,
 };

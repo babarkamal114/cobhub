@@ -5,6 +5,7 @@ import { buttonIconVariants } from './buttonIconVariants';
 import { buttonVariants } from './buttonVariants';
 import { cardVariants } from './cardVariants';
 import { inputVariants } from './inputVariants';
+import { tabListStyles, tabStyles } from './tabVariants';
 import { typographyVariants } from './typographyVariants';
 
 export {
@@ -17,4 +18,6 @@ export {
   dismissButtonVariants,
   inputVariants,
   typographyVariants,
+  tabListStyles,
+  tabStyles,
 };
