@@ -1,7 +1,7 @@
 import { VariantProps } from 'class-variance-authority';
 import * as React from 'react';
 
-import { typographyVariants } from '@/components/variants/typographyVariants';
+import { typographyVariants } from '@/components/variants/typography-variants';
 import { cn } from '@/lib/utils';
 
 interface TypographyProps

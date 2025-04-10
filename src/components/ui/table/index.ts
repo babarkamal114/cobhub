@@ -1,10 +1,11 @@
 'use client';
-import TD from './TD';
-import TH from './TH';
-import TR from './TR';
-import TableComp from './Table';
-import Tbody from './Tbody';
-import Thead from './Thead';
+
+import TableComp from './table';
+import Tbody from './tbody';
+import TD from './td';
+import TH from './th';
+import Thead from './thead';
+import TR from './tr';
 
 export class Table {
   static Root = TableComp;

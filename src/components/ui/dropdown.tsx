@@ -5,7 +5,7 @@ import React, { type FC, useRef, useState, useEffect, KeyboardEvent } from 'reac
 
 import { useOnClickOutside } from 'hooks';
 
-import IconButton from './iconButton';
+import IconButton from './icon-button';
 
 interface DropdownProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
