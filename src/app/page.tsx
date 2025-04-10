@@ -1,3 +1,5 @@
+'use client';
+
 import ThemeSwitch from '@/components/theme-toggle';
 import { Typography } from 'ui-components';
 

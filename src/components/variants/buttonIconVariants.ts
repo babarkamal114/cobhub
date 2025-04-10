@@ -49,13 +49,13 @@ export const buttonIconVariants = cva(
         variant: 'solid',
         color: 'default',
         className:
-          'text-default-50 bg-default-600 hover:bg-default-700 active:bg-default-500 focus-visible:ring-default-400',
+          'text-default-200 bg-default-500 hover:bg-default-700 active:bg-default-500 focus-visible:ring-default-400',
       },
       {
         variant: 'solid',
         color: 'contrast',
         className:
-          'text-contrast bg-default-900 hover:bg-default-800 active:bg-default-700 focus-visible:ring-contrast-400',
+          'text-default-200 bg-default-900 hover:bg-default-800 active:bg-default-700 focus-visible:ring-contrast-400',
       },
       {
         variant: 'solid',
@@ -67,7 +67,7 @@ export const buttonIconVariants = cva(
         variant: 'solid',
         color: 'primary',
         className:
-          'text-contrast bg-primary-600 hover:bg-primary-700 active:bg-primary-500 focus-visible:ring-primary-400',
+          'text-default-200 bg-primary-500 hover:bg-primary-700 active:bg-primary-500 focus-visible:ring-primary-400',
       },
       {
         variant: 'solid',
@@ -169,13 +169,13 @@ export const buttonIconVariants = cva(
         variant: 'pastel',
         color: 'default',
         className:
-          'bg-default-200 text-default-900 hover:bg-default-300 focus-visible:ring-default-400',
+          'bg-default-200 text-default-600 hover:bg-default-300 focus-visible:ring-default-400',
       },
       {
         variant: 'pastel',
         color: 'contrast',
         className:
-          'bg-default-900 text-contrast hover:bg-default-800 focus-visible:ring-default-400',
+          'bg-default-900 text-default-300 hover:bg-default-800 focus-visible:ring-default-400',
       },
       {
         variant: 'pastel',
@@ -186,42 +186,42 @@ export const buttonIconVariants = cva(
         variant: 'pastel',
         color: 'primary',
         className:
-          'bg-primary-100 text-primary-900 hover:bg-primary-200 focus-visible:ring-primary-400',
+          'bg-primary-100 text-primary-600 hover:bg-primary-200 focus-visible:ring-primary-400',
       },
       {
         variant: 'pastel',
         color: 'info',
-        className: 'bg-info-100 text-info-900 hover:bg-info-200 focus-visible:ring-info-400',
+        className: 'bg-info-100 text-info-600 hover:bg-info-200 focus-visible:ring-info-400',
       },
       {
         variant: 'pastel',
         color: 'success',
         className:
-          'bg-success-100 text-success-900 hover:bg-success-200 focus-visible:ring-success-400',
+          'bg-success-100 text-success-600 hover:bg-success-200 focus-visible:ring-success-400',
       },
       {
         variant: 'pastel',
         color: 'warning',
         className:
-          'bg-warning-100 text-warning-900 hover:bg-warning-200 focus-visible:ring-warning-400',
+          'bg-warning-100 text-warning-600 hover:bg-warning-200 focus-visible:ring-warning-400',
       },
       {
         variant: 'pastel',
         color: 'danger',
         className:
-          'bg-danger-100 text-danger-900 hover:bg-danger-200 focus-visible:ring-danger-400',
+          'bg-danger-100 text-danger-600 hover:bg-danger-200 focus-visible:ring-danger-400',
       },
       {
         variant: 'pastel',
         color: 'yellow',
         className:
-          'bg-yellow-100 text-yellow-900 hover:bg-yellow-200 focus-visible:ring-yellow-400',
+          'bg-yellow-100 text-yellow-600 hover:bg-yellow-200 focus-visible:ring-yellow-400',
       },
       {
         variant: 'pastel',
         color: 'violet',
         className:
-          'bg-violet-100 text-violet-900 hover:bg-violet-200 focus-visible:ring-violet-400',
+          'bg-violet-100 text-violet-600 hover:bg-violet-200 focus-visible:ring-violet-400',
       },
     ],
     defaultVariants: {
