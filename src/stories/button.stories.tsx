@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import React from 'react';
 
-import { ButtonProps } from '@/types';
+import { ButtonProps } from 'types';
 import { Button } from 'ui-components';
 
 export default {

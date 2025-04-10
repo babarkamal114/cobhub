@@ -1365,9 +1365,9 @@
   integrity sha512-+SFtMgoiYP3WoSswuNmxJOCwi06TdWE733D+WPjpXIe4LXGULwEaofiiAy6kbS0+XjM5xF5n3lKuBwN2SnqD9g==
 
 "@next/env@^15.0.3":
-  version "15.2.5"
-  resolved "https://registry.yarnpkg.com/@next/env/-/env-15.2.5.tgz#4a694986388aced6045dcde1e994ed55341282ca"
-  integrity sha512-uWkCf9C8wKTyQjqrNk+BA7eL3LOQdhL+xlmJUf2O85RM4lbzwBwot3Sqv2QGe/RGnc3zysIf1oJdtq9S00pkmQ==
+  version "15.3.0"
+  resolved "https://registry.yarnpkg.com/@next/env/-/env-15.3.0.tgz#ea3a2a02e8023097efa23ec573540f522815e9d4"
+  integrity sha512-6mDmHX24nWlHOlbwUiAOmMyY7KELimmi+ed8qWcJYjqXeC+G6JzPZ3QosOAfjNwgMIzwhXBiRiCgdh8axTTdTA==
 
 "@next/eslint-plugin-next@15.2.4":
   version "15.2.4"
@@ -1448,9 +1448,9 @@
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
 "@pkgr/core@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@pkgr/core/-/core-0.2.1.tgz#6d083acfddae21fb329c8df8c94bf895ce7d0c15"
-  integrity sha512-VzgHzGblFmUeBmmrk55zPyrQIArQN4vujc9shWytaPdB3P7qhi0cpaiKIr7tlCmFv2lYUwnLospIqjL9ZSAhhg==
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@pkgr/core/-/core-0.2.2.tgz#224e466468489466a3ca77832be80cdd0bb8e523"
+  integrity sha512-25L86MyPvnlQoX2MTIV2OiUcb6vJ6aRbFa9pbwByn95INKD5mFH2smgjDhq+fwJoqAgvgbdJLj6Tz7V9X5CFAQ==
 
 "@pmmmwh/react-refresh-webpack-plugin@^0.5.11":
   version "0.5.16"
@@ -1466,9 +1466,9 @@
     source-map "^0.7.3"
 
 "@polka/url@^1.0.0-next.24":
-  version "1.0.0-next.28"
-  resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.28.tgz#d45e01c4a56f143ee69c54dd6b12eade9e270a73"
-  integrity sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==
+  version "1.0.0-next.29"
+  resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.29.tgz#5a40109a1ab5f84d6fd8fc928b19f367cbe7e7b1"
+  integrity sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==
 
 "@radix-ui/primitive@1.1.2":
   version "1.1.2"
@@ -3269,9 +3269,9 @@ camelcase-css@^2.0.1:
   integrity sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==
 
 caniuse-lite@^1.0.30001579, caniuse-lite@^1.0.30001688, caniuse-lite@^1.0.30001702:
-  version "1.0.30001712"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001712.tgz#41ee150f12de11b5f57c5889d4f30deb451deedf"
-  integrity sha512-MBqPpGYYdQ7/hfKiet9SCI+nmN5/hp4ZzveOJubl5DTAMa5oggjAuoi0Z4onBpKPFI2ePGnQuQIzF3VxDjDJig==
+  version "1.0.30001713"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001713.tgz#6b33a8857e6c7dcb41a0caa2dd0f0489c823a52d"
+  integrity sha512-wCIWIg+A4Xr7NfhTuHdX+/FKh3+Op3LBbSp2N5Pfx6T/LhdQy3GTyoTg48BReaW/MyMNZAkTadsBtai3ldWK0Q==
 
 case-sensitive-paths-webpack-plugin@^2.4.0:
   version "2.4.0"
@@ -3836,9 +3836,9 @@ eastasianwidth@^0.2.0:
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
 electron-to-chromium@^1.5.73:
-  version "1.5.134"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.134.tgz#d90008c4f8a506c1a6d1b329f922d83e18904101"
-  integrity sha512-zSwzrLg3jNP3bwsLqWHmS5z2nIOQ5ngMnfMZOWWtXnqqQkPVyOipxK98w+1beLw1TB+EImPNcG8wVP/cLVs2Og==
+  version "1.5.135"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.135.tgz#6d835020fa0c7f02f30d7608c2f3c0a764236699"
+  integrity sha512-8gXUdEmvb+WCaYUhA0Svr08uSeRjM2w3x5uHOc1QbaEVzJXB8rgm5eptieXzyKoVEtinLvW6MtTcurA65PeS1Q==
 
 elliptic@^6.5.3, elliptic@^6.5.5:
   version "6.6.1"
@@ -5449,9 +5449,9 @@ lint-staged@^15.5.0:
     yaml "^2.7.0"
 
 listr2@^8.2.5:
-  version "8.2.5"
-  resolved "https://registry.yarnpkg.com/listr2/-/listr2-8.2.5.tgz#5c9db996e1afeb05db0448196d3d5f64fec2593d"
-  integrity sha512-iyAZCeyD+c1gPyE9qpFu8af0Y+MRtmKOncdGoA2S5EY8iFq99dmmvkNnHiWo+pj0s7yH7l3KPIgee77tKpXPWQ==
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/listr2/-/listr2-8.3.2.tgz#c252ec9a3334950bfca9238457d0ad2c1a5cc867"
+  integrity sha512-vsBzcU4oE+v0lj4FhVLzr9dBTv4/fHIa57l+GCwovP8MoFNZJTOhGU8PXd4v2VJCbECAaijBiHntiekFMLvo0g==
   dependencies:
     cli-truncate "^4.0.0"
     colorette "^2.0.20"
@@ -7790,9 +7790,9 @@ vite-plugin-storybook-nextjs@^1.1.5:
     ts-dedent "^2.2.0"
 
 "vite@^5.0.0 || ^6.0.0":
-  version "6.2.5"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-6.2.5.tgz#d093b5fe8eb96e594761584a966ab13f24457820"
-  integrity sha512-j023J/hCAa4pRIUH6J9HemwYfjB5llR2Ps0CWeikOtdR8+pAURAk0DoJC5/mm9kd+UgdnIy7d6HE4EAvlYhPhA==
+  version "6.2.6"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-6.2.6.tgz#7f0ccf2fdc0c1eda079ce258508728e2473d3f61"
+  integrity sha512-9xpjNl3kR4rVDZgPNdTL0/c6ao4km69a/2ihNQbcANz8RuCOK3hQBmLSJf3bRKVQjVMda+YvizNE8AwvogcPbw==
   dependencies:
     esbuild "^0.25.0"
     postcss "^8.5.3"
