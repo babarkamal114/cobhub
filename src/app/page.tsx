@@ -1,7 +1,7 @@
 'use client';
 
 import ThemeSwitch from '@/components/theme-toggle';
-import { Alert, Typography } from 'ui-components';
+import { Typography } from 'ui-components';
 
 export default function Home() {
   return (
@@ -16,22 +16,6 @@ export default function Home() {
           meetings, track performance, and streamline workflows—all in one place. Boost productivity
           and keep your team aligned effortlessly.
         </Typography>
-
-        <Alert label="This is a default alert." color="default" shape="smooth" />
-
-        <Alert
-          label="Everything went well!"
-          color="success"
-          shape="rounded"
-          icon="lucide:check-circle"
-        />
-
-        <Alert
-          label="Please be cautious."
-          color="warning"
-          shape="curved"
-          icon="lucide:alert-triangle"
-        />
       </div>
     </main>
   );
