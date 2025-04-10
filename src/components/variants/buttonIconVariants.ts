@@ -48,98 +48,110 @@ export const buttonIconVariants = cva(
       {
         variant: 'solid',
         color: 'default',
-        className: 'text-gray-800 bg-white hover:bg-gray-100 active:bg-gray-200',
+        className:
+          'text-default-50 bg-default-600 hover:bg-default-700 active:bg-default-500 focus-visible:ring-default-400',
       },
       {
         variant: 'solid',
         color: 'contrast',
-        className: 'text-white bg-black hover:bg-gray-800 active:bg-gray-700',
+        className:
+          'text-contrast bg-default-900 hover:bg-default-800 active:bg-default-700 focus-visible:ring-contrast-400',
       },
       {
         variant: 'solid',
         color: 'muted',
         className:
-          'text-gray-500 bg-gray-200 hover:bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700',
+          'text-muted-600 bg-muted-200 hover:bg-muted-300 dark:bg-muted-600 dark:hover:bg-muted-700 focus-visible:ring-muted-400',
       },
       {
         variant: 'solid',
         color: 'primary',
-        className: 'text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-500',
+        className:
+          'text-contrast bg-primary-600 hover:bg-primary-700 active:bg-primary-500 focus-visible:ring-primary-400',
       },
       {
         variant: 'solid',
         color: 'info',
-        className: 'text-white bg-teal-500 hover:bg-teal-600 active:bg-teal-400',
+        className:
+          'text-contrast bg-info-600 hover:bg-info-700 active:bg-info-500 focus-visible:ring-info-400',
       },
       {
         variant: 'solid',
         color: 'success',
-        className: 'text-white bg-green-500 hover:bg-green-600 active:bg-green-400',
+        className:
+          'text-contrast bg-success-600 hover:bg-success-700 active:bg-success-500 focus-visible:ring-success-400',
       },
       {
         variant: 'solid',
         color: 'warning',
-        className: 'text-white bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-400',
+        className:
+          'text-contrast bg-warning-600 hover:bg-warning-700 active:bg-warning-500 focus-visible:ring-warning-400',
       },
       {
         variant: 'solid',
         color: 'danger',
-        className: 'text-white bg-red-500 hover:bg-red-600 active:bg-red-400',
+        className:
+          'text-contrast bg-danger-600 hover:bg-danger-700 active:bg-danger-500 focus-visible:ring-danger-400',
       },
       {
         variant: 'solid',
         color: 'yellow',
-        className: 'text-white bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-400',
+        className:
+          'text-contrast bg-yellow-600 hover:bg-yellow-700 active:bg-yellow-500 focus-visible:ring-yellow-400',
       },
       {
         variant: 'solid',
         color: 'violet',
-        className: 'text-white bg-violet-500 hover:bg-violet-600 active:bg-violet-400',
+        className:
+          'text-contrast bg-violet-600 hover:bg-violet-700 active:bg-violet-500 focus-visible:ring-violet-400',
       },
       {
         variant: 'outlined',
         color: 'default',
         className:
-          'border border-gray-500 dark:border-gray-200 text-gray-600 hover:bg-gray-50 focus-visible:ring-gray-400',
+          'border border-default-500 text-default-600 hover:bg-default-50 focus-visible:ring-default-400',
       },
       {
         variant: 'outlined',
         color: 'contrast',
-        className: 'border border-black text-black hover:bg-gray-50 focus-visible:ring-gray-400',
+        className:
+          'border border-black text-black hover:bg-default-50 focus-visible:ring-contrast-400',
       },
       {
         variant: 'outlined',
         color: 'muted',
         className:
-          'border border-gray-400 text-gray-600 hover:bg-gray-50 focus-visible:ring-gray-400',
+          'border border-muted-400 text-muted-600 hover:bg-default-50 focus-visible:ring-muted-400',
       },
       {
         variant: 'outlined',
         color: 'primary',
         className:
-          'border border-blue-600 text-blue-600 hover:bg-blue-50 focus-visible:ring-blue-400',
+          'border border-primary-600 text-primary-600 hover:bg-primary-50 focus-visible:ring-primary-400',
       },
       {
         variant: 'outlined',
         color: 'info',
-        className: 'border border-sky-600 text-sky-600 hover:bg-sky-50 focus-visible:ring-sky-400',
+        className:
+          'border border-info-600 text-info-600 hover:bg-info-50 focus-visible:ring-info-400',
       },
       {
         variant: 'outlined',
         color: 'success',
         className:
-          'border border-green-600 text-green-600 hover:bg-green-50 focus-visible:ring-green-400',
+          'border border-success-600 text-success-600 hover:bg-success-50 focus-visible:ring-success-400',
       },
       {
         variant: 'outlined',
         color: 'warning',
         className:
-          'border border-amber-600 text-amber-600 hover:bg-amber-50 focus-visible:ring-amber-400',
+          'border border-warning-600 text-warning-600 hover:bg-warning-50 focus-visible:ring-warning-400',
       },
       {
         variant: 'outlined',
         color: 'danger',
-        className: 'border border-red-600 text-red-600 hover:bg-red-50 focus-visible:ring-red-400',
+        className:
+          'border border-danger-600 text-danger-600 hover:bg-danger-50 focus-visible:ring-danger-400',
       },
       {
         variant: 'outlined',
@@ -156,42 +168,48 @@ export const buttonIconVariants = cva(
       {
         variant: 'pastel',
         color: 'default',
-        className: 'bg-gray-200 text-gray-900 hover:bg-gray-300 focus-visible:ring-gray-400',
+        className:
+          'bg-default-200 text-default-900 hover:bg-default-300 focus-visible:ring-default-400',
       },
       {
         variant: 'pastel',
         color: 'contrast',
-        className: 'bg-black text-white hover:bg-gray-800 focus-visible:ring-gray-400',
+        className:
+          'bg-default-900 text-contrast hover:bg-default-800 focus-visible:ring-default-400',
       },
       {
         variant: 'pastel',
         color: 'muted',
-        className: 'bg-gray-100 text-gray-600 hover:bg-gray-200 focus-visible:ring-gray-400',
+        className: 'bg-muted-100 text-muted-600 hover:bg-muted-200 focus-visible:ring-muted-400',
       },
       {
         variant: 'pastel',
         color: 'primary',
-        className: 'bg-blue-100 text-blue-900 hover:bg-blue-200 focus-visible:ring-blue-400',
+        className:
+          'bg-primary-100 text-primary-900 hover:bg-primary-200 focus-visible:ring-primary-400',
       },
       {
         variant: 'pastel',
         color: 'info',
-        className: 'bg-sky-100 text-sky-900 hover:bg-sky-200 focus-visible:ring-sky-400',
+        className: 'bg-info-100 text-info-900 hover:bg-info-200 focus-visible:ring-info-400',
       },
       {
         variant: 'pastel',
         color: 'success',
-        className: 'bg-green-100 text-green-900 hover:bg-green-200 focus-visible:ring-green-400',
+        className:
+          'bg-success-100 text-success-900 hover:bg-success-200 focus-visible:ring-success-400',
       },
       {
         variant: 'pastel',
         color: 'warning',
-        className: 'bg-amber-100 text-amber-900 hover:bg-amber-200 focus-visible:ring-amber-400',
+        className:
+          'bg-warning-100 text-warning-900 hover:bg-warning-200 focus-visible:ring-warning-400',
       },
       {
         variant: 'pastel',
         color: 'danger',
-        className: 'bg-red-100 text-red-900 hover:bg-red-200 focus-visible:ring-red-400',
+        className:
+          'bg-danger-100 text-danger-900 hover:bg-danger-200 focus-visible:ring-danger-400',
       },
       {
         variant: 'pastel',

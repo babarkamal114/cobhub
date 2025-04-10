@@ -19,22 +19,25 @@ export const avatarVariants = cva('relative flex shrink-0 items-center justify-c
       full: 'rounded-full',
     },
     color: {
-      default: 'bg-gray-900 text-white hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700',
+      default:
+        'bg-default-900 text-contrast hover:bg-default-700 dark:bg-default-800 dark:hover:bg-default-700',
       contrast:
-        'bg-white text-gray-900 hover:bg-gray-200 dark:bg-gray-200 dark:text-gray-900 dark:hover:bg-gray-300',
+        'bg-default-100 text-default-900 hover:bg-default-200 dark:bg-default-100 dark:text-default-900 dark:hover:bg-default-200',
       muted:
-        'bg-gray-100 text-gray-900 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600',
-      primary: 'bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600',
-      info: 'bg-cyan-600 text-white hover:bg-cyan-700 dark:bg-cyan-500 dark:hover:bg-cyan-600',
+        'bg-muted-200 text-default-900 hover:bg-muted-300 dark:bg-muted-700 dark:text-muted-300 dark:hover:bg-muted-600',
+      primary:
+        'bg-primary-600 text-contrast hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600',
+      info: 'bg-info-600 text-contrast hover:bg-info-700 dark:bg-info-500 dark:hover:bg-info-600',
       success:
-        'bg-green-600 text-white hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-600',
+        'bg-success-600 text-contrast hover:bg-success-700 dark:bg-success-500 dark:hover:bg-success-600',
       warning:
-        'bg-amber-600 text-white hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-600',
-      danger: 'bg-red-600 text-white hover:bg-red-700 dark:bg-red-500 dark:hover:bg-red-600',
+        'bg-warning-600 text-contrast hover:bg-warning-700 dark:bg-warning-500 dark:hover:bg-warning-600',
+      danger:
+        'bg-danger-600 text-contrast hover:bg-danger-700 dark:bg-danger-500 dark:hover:bg-danger-600',
       yellow:
-        'bg-yellow-600 text-white hover:bg-yellow-700 dark:bg-yellow-500 dark:hover:bg-yellow-600',
+        'bg-yellow-600 text-contrast hover:bg-yellow-700 dark:bg-yellow-500 dark:hover:bg-yellow-600',
       violet:
-        'bg-violet-600 text-white hover:bg-violet-700 dark:bg-violet-500 dark:hover:bg-violet-600',
+        'bg-violet-600 text-contrast hover:bg-violet-700 dark:bg-violet-500 dark:hover:bg-violet-600',
     },
     overlaps: {
       true: '',

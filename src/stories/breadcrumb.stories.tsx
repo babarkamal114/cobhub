@@ -19,25 +19,38 @@ export default {
   },
 } as Meta<typeof Breadcrumb>;
 
-const BreadcrumbTemplate: StoryFn<typeof Breadcrumb> = args => <Breadcrumb {...args} />;
-
-export const Basic = BreadcrumbTemplate.bind({});
-
 const breadcrumbItems = [
   { title: 'Home', href: '#', icon: Home },
   { title: 'Projects', href: '#', icon: Folder },
   { title: 'Document', icon: FileText },
 ];
 
-export const Default = () => (
-  <Breadcrumb items={breadcrumbItems} color="default" separator="slash" />
-);
-export const ChevronSeparator = () => (
-  <Breadcrumb items={breadcrumbItems} color="primary" separator="chevron" />
-);
-export const ArrowSeparator = () => (
-  <Breadcrumb items={breadcrumbItems} color="violet" separator="arrow" />
-);
-export const DotSeparator = () => (
-  <Breadcrumb items={breadcrumbItems} color="success" separator="dot" />
-);
+const Template: StoryFn<typeof Breadcrumb> = args => <Breadcrumb {...args} />;
+
+export const Basic = Template.bind({});
+Basic.args = {
+  items: breadcrumbItems,
+  separator: 'slash',
+  color: 'default',
+};
+
+export const ChevronSeparator = Template.bind({});
+ChevronSeparator.args = {
+  items: breadcrumbItems,
+  separator: 'chevron',
+  color: 'primary',
+};
+
+export const ArrowSeparator = Template.bind({});
+ArrowSeparator.args = {
+  items: breadcrumbItems,
+  separator: 'arrow',
+  color: 'info',
+};
+
+export const DotSeparator = Template.bind({});
+DotSeparator.args = {
+  items: breadcrumbItems,
+  separator: 'dot',
+  color: 'success',
+};
