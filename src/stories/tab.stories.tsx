@@ -21,6 +21,7 @@ const meta: Meta<typeof TrackTabs<string>> = {
   title: 'UI/Tabs',
   component: TrackTabs,
   tags: ['autodocs'],
+
   argTypes: {
     shape: {
       control: {

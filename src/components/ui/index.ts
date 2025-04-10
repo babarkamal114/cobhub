@@ -8,6 +8,7 @@ import IconButton from './iconButton';
 import { Input } from './input';
 import Modal from './modal';
 import TrackTabs from './tab';
+import Table from './table/Table';
 import { Typography } from './typography';
 
 export {
@@ -20,6 +21,7 @@ export {
   Dropdown,
   IconButton,
   Input,
+  Table,
   Typography,
   TrackTabs,
   Modal,
