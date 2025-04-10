@@ -84,6 +84,19 @@ export interface AlertProps {
   autoCloseDelay?: number;
 }
 
+export interface TrackTabsProps<T> {
+  categories: {
+    [key: string]: T[];
+  };
+  renderItem: (item: T, index: number) => ReactNode;
+  keyExtractor: (item: T) => string | number;
+  shape?: 'straight' | 'rounded' | 'smooth' | 'curved' | 'full';
+  aria?: {
+    label?: string;
+    getItemLabel?: (item: T) => string;
+  };
+}
+
 export type Color =
   | 'default'
   | 'contrast'
