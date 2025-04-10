@@ -1,5 +1,8 @@
+'use client';
+import { Bell } from 'lucide-react';
+
 import ThemeSwitch from '@/components/theme-toggle';
-import { Typography } from 'ui-components';
+import { Dropdown, Typography } from 'ui-components';
 
 export default function Home() {
   return (
@@ -14,6 +17,14 @@ export default function Home() {
           meetings, track performance, and streamline workflows—all in one place. Boost productivity
           and keep your team aligned effortlessly.
         </Typography>
+
+        <Dropdown title="Notifications" showAll="viwe" toggleIcon={Bell} indicator>
+          <ul>
+            <li className="px-4 py-2 text-sm hover:bg-muted-100">Message from John</li>
+            <li className="px-4 py-2 text-sm hover:bg-muted-100">System alert</li>
+            <li className="px-4 py-2 text-sm hover:bg-muted-100">New comment</li>
+          </ul>
+        </Dropdown>
       </div>
     </main>
   );

@@ -1,3 +1,4 @@
+import useOnClickOutside from './useOnClickOutside';
 import useTheme from './useTheme';
 
-export { useTheme };
+export { useTheme, useOnClickOutside };
