@@ -1,4 +1,5 @@
 import {
+  AlertProps,
   AvatarProps,
   BreadcrumbProps,
   ButtonProps,
@@ -12,6 +13,7 @@ import {
 import { Sizes } from './theme';
 
 export type {
+  AlertProps,
   AvatarProps,
   BreadcrumbProps,
   ButtonProps,

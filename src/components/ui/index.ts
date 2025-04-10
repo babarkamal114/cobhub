@@ -1,3 +1,4 @@
+import Alert from './alert';
 import { Avatar, AvatarGroup } from './avatar';
 import { Breadcrumb } from './breadcrumb';
 import { Button } from './button';
@@ -9,6 +10,7 @@ import Modal from './modal';
 import { Typography } from './typography';
 
 export {
+  Alert,
   Avatar,
   AvatarGroup,
   Breadcrumb,

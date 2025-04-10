@@ -71,6 +71,19 @@ export interface ModalProps {
   description?: string;
 }
 
+export interface AlertProps {
+  children?: React.ReactNode;
+  icon?: string;
+  label?: string;
+  color?: Color;
+  shape?: Shape;
+  dismissible?: boolean;
+  onDismiss?: () => void;
+  className?: string;
+  autoClose?: boolean;
+  autoCloseDelay?: number;
+}
+
 export type Color =
   | 'default'
   | 'contrast'
