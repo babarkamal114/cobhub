@@ -18,7 +18,6 @@ const meta: Meta<typeof Alert> = {
         'success',
         'warning',
         'danger',
-        'yellow',
         'violet',
       ],
     },
@@ -105,7 +104,7 @@ export const Icons: Story = {
         icon="lucide:alert-octagon"
         label="Danger color - Alert Octagon"
       />
-      <Alert {...args} color="yellow" icon="lucide:star" label="Yellow color - Star" />
+      <Alert {...args} color="warning" icon="lucide:star" label="Warning color - Star" />
       <Alert {...args} color="violet" icon="lucide:moon" label="Violet color - Moon" />
     </div>
   ),
@@ -128,7 +127,6 @@ export const Color: Story = {
       <Alert {...args} color="success" label="Success color" />
       <Alert {...args} color="warning" label="Warning color" />
       <Alert {...args} color="danger" label="Danger color" />
-      <Alert {...args} color="yellow" label="Yellow color" />
       <Alert {...args} color="violet" label="Violet color" />
     </div>
   ),

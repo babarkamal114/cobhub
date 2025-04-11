@@ -34,7 +34,6 @@ export const buttonIconVariants = cva(
         success: '',
         warning: '',
         danger: '',
-        yellow: '',
         violet: '',
       },
       isDisabled: {
@@ -95,12 +94,6 @@ export const buttonIconVariants = cva(
       },
       {
         variant: 'solid',
-        color: 'yellow',
-        className:
-          'text-contrast bg-yellow-600 hover:bg-yellow-700 active:bg-yellow-500 focus-visible:ring-yellow-400',
-      },
-      {
-        variant: 'solid',
         color: 'violet',
         className:
           'text-contrast bg-violet-600 hover:bg-violet-700 active:bg-violet-500 focus-visible:ring-violet-400',
@@ -155,12 +148,6 @@ export const buttonIconVariants = cva(
       },
       {
         variant: 'outlined',
-        color: 'yellow',
-        className:
-          'border border-yellow-600 text-yellow-600 hover:bg-yellow-50 focus-visible:ring-yellow-400',
-      },
-      {
-        variant: 'outlined',
         color: 'violet',
         className:
           'border border-violet-600 text-violet-600 hover:bg-violet-50 focus-visible:ring-violet-400',
@@ -210,12 +197,6 @@ export const buttonIconVariants = cva(
         color: 'danger',
         className:
           'bg-danger-100 text-danger-600 hover:bg-danger-200 focus-visible:ring-danger-400',
-      },
-      {
-        variant: 'pastel',
-        color: 'yellow',
-        className:
-          'bg-yellow-100 text-yellow-600 hover:bg-yellow-200 focus-visible:ring-yellow-400',
       },
       {
         variant: 'pastel',
