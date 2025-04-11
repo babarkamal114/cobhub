@@ -3,6 +3,7 @@ import { Avatar, AvatarGroup } from './avatar';
 import { Breadcrumb } from './breadcrumb';
 import { Button } from './button';
 import { Card } from './card';
+import { Checkbox } from './checkbox';
 import { Dropdown } from './dropdown';
 import { IconButton } from './icon-button';
 import { Input } from './input';
@@ -20,6 +21,7 @@ export {
   Breadcrumb,
   Button,
   Card,
+  Checkbox,
   Dropdown,
   IconButton,
   Input,
