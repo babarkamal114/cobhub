@@ -8,6 +8,7 @@ import {
   ModalProps,
   Shape,
   Size,
+  ToggleBoxProps,
   TrackTabsProps,
   Variant,
 } from './components';
@@ -24,6 +25,7 @@ export type {
   Shape,
   Size,
   Sizes,
+  ToggleBoxProps,
   TrackTabsProps,
   Variant,
 };

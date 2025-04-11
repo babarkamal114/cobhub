@@ -35,7 +35,6 @@ export const buttonVariants = cva(
         success: '',
         warning: '',
         danger: '',
-        yellow: '',
         violet: '',
       },
       isDisabled: {
@@ -96,12 +95,6 @@ export const buttonVariants = cva(
       },
       {
         variant: 'solid',
-        color: 'yellow',
-        className:
-          'text-contrast bg-yellow-600 hover:bg-yellow-700 active:bg-yellow-500 focus-visible:ring-yellow-500 focus-visible:ring-offset-2',
-      },
-      {
-        variant: 'solid',
         color: 'violet',
         className:
           'text-contrast bg-violet-600 hover:bg-violet-700 active:bg-violet-500 focus-visible:ring-violet-500 focus-visible:ring-offset-2',
@@ -156,12 +149,6 @@ export const buttonVariants = cva(
       },
       {
         variant: 'pastel',
-        color: 'yellow',
-        className:
-          'bg-yellow-100 text-yellow-900 hover:bg-yellow-200 focus-visible:ring-yellow-400 focus-visible:ring-offset-2',
-      },
-      {
-        variant: 'pastel',
         color: 'violet',
         className:
           'bg-violet-100 text-violet-900 hover:bg-violet-200 focus-visible:ring-violet-400 focus-visible:ring-offset-2',
@@ -213,12 +200,6 @@ export const buttonVariants = cva(
         color: 'danger',
         className:
           'border border-danger-600 text-danger-600 hover:bg-danger-50 focus-visible:ring-danger-400 focus-visible:ring-offset-2',
-      },
-      {
-        variant: 'outlined',
-        color: 'yellow',
-        className:
-          'border border-yellow-600 text-yellow-600 hover:bg-yellow-50 focus-visible:ring-yellow-400 focus-visible:ring-offset-2',
       },
       {
         variant: 'outlined',

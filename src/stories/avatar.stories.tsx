@@ -21,7 +21,6 @@ export default {
         'success',
         'warning',
         'danger',
-        'yellow',
         'violet',
       ],
     },
@@ -57,7 +56,6 @@ export const DifferentSizes = () => (
     <Avatar size="xs" text="XS" color="info" />
     <Avatar size="sm" text="SM" color="success" />
     <Avatar size="md" text="MD" color="warning" />
-    <Avatar size="lg" text="LG" color="yellow" />
     <Avatar size="xl" text="XL" color="danger" />
   </div>
 );
@@ -68,7 +66,7 @@ export const DifferentShapes = () => (
     <Avatar shape="rounded" text="R" color="success" />
     <Avatar shape="smooth" text="S" color="violet" />
     <Avatar shape="curved" text="C" color="danger" />
-    <Avatar shape="full" text="F" color="yellow" />
+    <Avatar shape="full" text="F" color="warning" />
   </div>
 );
 

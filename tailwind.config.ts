@@ -37,7 +37,6 @@ const config: Config = {
         warning: colors.amber,
         danger: colors.red,
         violet: colors.violet,
-        yellow: colors.yellow,
       },
     },
   },

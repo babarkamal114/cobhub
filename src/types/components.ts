@@ -84,6 +84,18 @@ export interface AlertProps {
   autoCloseDelay?: number;
 }
 
+export interface ToggleBoxProps {
+  isToggle?: boolean;
+  open?: boolean;
+  title?: string;
+  shape?: Shape;
+  color?: Color;
+  growOnExpand?: boolean;
+  spaced?: boolean;
+  header?: React.ReactNode;
+  children: React.ReactNode;
+}
+
 export interface TrackTabsProps<T> {
   categories: {
     [key: string]: T[];
@@ -106,8 +118,7 @@ export type Color =
   | 'success'
   | 'warning'
   | 'danger'
-  | 'violet'
-  | 'yellow';
+  | 'violet';
 export type Shape = 'straight' | 'rounded' | 'smooth' | 'curved' | 'full';
 export type Variant = 'solid' | 'pastel' | 'outlined';
 export type Size = 'xl' | 'lg' | 'md' | 'sm' | 'xs' | 'xxs' | 'xxxs';

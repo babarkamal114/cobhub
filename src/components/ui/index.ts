@@ -10,6 +10,7 @@ import { Modal } from './modal';
 import { TrackTabs } from './tab';
 import { Table } from './table';
 import { Tag } from './tag';
+import { ToggleBox } from './toggle-box';
 import { Typography } from './typography';
 
 export {
@@ -25,6 +26,7 @@ export {
   Modal,
   Table,
   Tag,
+  ToggleBox,
   TrackTabs,
   Typography,
 };
