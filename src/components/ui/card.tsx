@@ -23,4 +23,6 @@ const Card = ({
   );
 };
 
-export default Card;
+Card.displayName = 'Card';
+
+export { Card };

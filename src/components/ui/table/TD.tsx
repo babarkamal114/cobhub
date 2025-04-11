@@ -13,4 +13,4 @@ const TD: FC<TableDataProps> = ({ className: classes = '', children, ...props })
   </td>
 );
 
-export default TD;
+export { TD };

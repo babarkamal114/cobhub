@@ -58,4 +58,6 @@ const IconButton: FC<IconButtonProps> = ({
   );
 };
 
-export default IconButton;
+IconButton.displayName = 'IconButton';
+
+export { IconButton };

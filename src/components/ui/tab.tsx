@@ -39,4 +39,5 @@ function TrackTabs<T>({ categories, renderItem, shape = 'smooth', aria = {} }: T
 }
 
 TrackTabs.displayName = 'TrackTabs';
-export default TrackTabs;
+
+export { TrackTabs };

@@ -10,4 +10,4 @@ const Tbody: FC<TbodyProps> = ({ className: classes = '', children, ...props }) 
   </tbody>
 );
 
-export default Tbody;
+export { Tbody };

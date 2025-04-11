@@ -13,4 +13,4 @@ const TR: FC<TRProps> = ({ className: classes = '', children, ...props }) => (
   </tr>
 );
 
-export default TR;
+export { TR };
