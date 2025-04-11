@@ -106,4 +106,6 @@ const Modal: FC<ModalProps> = ({
   );
 };
 
-export default Modal;
+Modal.displayName = 'Modal';
+
+export { Modal };

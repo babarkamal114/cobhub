@@ -72,4 +72,7 @@ export const AvatarGroup: React.FC<{
   );
 };
 
+AvatarGroup.displayName = 'AvatarGroup';
+Avatar.displayName = 'Avatar';
+
 export default Avatar;

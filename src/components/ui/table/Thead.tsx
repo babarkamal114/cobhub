@@ -10,4 +10,4 @@ const Thead: FC<TheadProps> = ({ className: classes = '', children, ...props }) 
   </thead>
 );
 
-export default Thead;
+export { Thead };

@@ -114,4 +114,4 @@ const Alert: FC<AlertProps> = ({
   );
 };
 Alert.displayName = 'Alert';
-export default Alert;
+export { Alert };

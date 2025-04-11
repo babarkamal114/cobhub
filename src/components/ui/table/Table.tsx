@@ -12,4 +12,4 @@ const TableComp: FC<TableProps> = ({ className: classes = '', children, ...props
   );
 };
 
-export default TableComp;
+export { TableComp };

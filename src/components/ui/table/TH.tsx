@@ -13,4 +13,4 @@ const TH: FC<TableHeadProps> = ({ className: classes = '', children, ...props })
   </th>
 );
 
-export default TH;
+export { TH };
