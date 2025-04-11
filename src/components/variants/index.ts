@@ -6,18 +6,20 @@ import { cardVariants } from './card-variants';
 import { buttonIconVariants } from './icon-button-variants';
 import { inputVariants } from './input-variants';
 import { tabListStyles, tabStyles } from './tab-variants';
+import { tagVariants } from './tag-varaints';
 import { typographyVariants } from './typography-variants';
 
 export {
   alertVariants,
   avatarVariants,
   breadcrumbVariants,
-  buttonVariants,
   buttonIconVariants,
+  buttonVariants,
   cardVariants,
   dismissButtonVariants,
   inputVariants,
-  typographyVariants,
   tabListStyles,
   tabStyles,
+  tagVariants,
+  typographyVariants,
 };
