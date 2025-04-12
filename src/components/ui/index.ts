@@ -2,6 +2,7 @@ import { Alert } from './alert';
 import { Avatar, AvatarGroup } from './avatar';
 import { Breadcrumb } from './breadcrumb';
 import { Button } from './button';
+import { ButtonLink } from './button-link';
 import { Card } from './card';
 import { Checkbox } from './checkbox';
 import { Dropdown } from './dropdown';
@@ -20,6 +21,7 @@ export {
   AvatarGroup,
   Breadcrumb,
   Button,
+  ButtonLink,
   Card,
   Checkbox,
   Dropdown,
