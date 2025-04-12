@@ -109,6 +109,19 @@ export interface TrackTabsProps<T> {
   };
 }
 
+export interface ProgressProps {
+  color?: Color;
+  contrast?: 'default' | 'contrast';
+  shape?: Shape;
+  size?: Size;
+  strockSize?: number;
+  value?: number;
+  max?: number;
+  thickness?: number;
+  classNames?: string | string[];
+  label?: string;
+}
+
 export type Color =
   | 'default'
   | 'contrast'
