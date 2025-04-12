@@ -19,3 +19,6 @@ export const spacing: Record<Size, string> = {
   xxs: '-space-x-2',
   xxxs: '-space-x-1.5',
 };
+
+export const RADIUS = 15.91549431;
+export const CIRCUMFERENCE = 2 * Math.PI * RADIUS;

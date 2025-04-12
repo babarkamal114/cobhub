@@ -38,6 +38,67 @@ const config: Config = {
         danger: colors.red,
         violet: colors.violet,
       },
+      keyframes: {
+        indeterminate: {
+          '0%': { 'margin-left': '-10%' },
+          '100%': { 'margin-left': '100%' },
+        },
+        'circle-chart-fill': {
+          to: {
+            'stroke-dasharray': '0 100',
+          },
+        },
+        wave: {
+          '0%': {
+            transform: 'scale(1)',
+            opacity: '1',
+          },
+
+          '25%': {
+            transform: 'scale(1)',
+            opacity: '1',
+          },
+
+          '100%': {
+            transform: 'scale(4.5)',
+            opacity: '0',
+          },
+        },
+        fadeInUp: {
+          from: {
+            transform: 'translate3d(0, 20px, 0)',
+          },
+
+          to: {
+            transform: 'translate3d(0, 0, 0)',
+            opacity: '1',
+          },
+        },
+        fadeInLeft: {
+          from: {
+            transform: 'translate3d(20px, 0, 0)',
+            opacity: '0',
+          },
+          to: {
+            transform: 'translate3d(0, 0, 0)',
+            opacity: '1',
+          },
+        },
+        spinAround: {
+          from: {
+            transform: 'rotate(0deg)',
+          },
+
+          to: {
+            transform: 'rotate(359deg)',
+          },
+        },
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+        'spin-fast': 'spin 0.65s linear infinite',
+        indeterminate: 'indeterminate 1s cubic-bezier(0.4, 0, 0.2, 1) infinite',
+      },
     },
   },
   plugins: [
