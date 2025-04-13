@@ -1,5 +1,5 @@
+import { Icon } from '@iconify/react/dist/iconify.js';
 import { Meta, StoryObj } from '@storybook/react';
-import { Mail, Heart, Settings, Loader2 } from 'lucide-react';
 import React from 'react';
 
 import { IconButton } from 'ui-components';
@@ -15,7 +15,7 @@ const meta: Meta<typeof IconButton> = {
     },
     size: {
       control: 'select',
-      options: ['xxxs', 'xxs', 'xs', 'sm', 'md', 'lg', 'xl'],
+      options: ['sm', 'md', 'lg', 'xl'],
     },
     shape: {
       control: 'select',
@@ -29,7 +29,7 @@ const meta: Meta<typeof IconButton> = {
     children: { control: 'object' },
   },
   args: {
-    children: <Mail size={20} />,
+    children: <Icon icon="ph:chat-duotone" width="24" height="24" />,
     variant: 'solid',
     size: 'md',
     shape: 'rounded',
@@ -43,7 +43,7 @@ type Story = StoryObj<typeof IconButton>;
 
 export const Default: Story = {
   args: {
-    children: <Mail size={20} />,
+    children: <Icon icon="ph:chat-duotone" width="24" height="24" />,
     variant: 'solid',
     size: 'md',
     shape: 'rounded',
@@ -57,16 +57,28 @@ export const SolidVariants = () => (
     <h2 className="text-lg font-semibold">Solid Variants</h2>
     <div className="flex flex-wrap gap-4">
       <IconButton variant="solid" color="default">
-        <Mail size={20} />
+        <Icon icon="ph:chat-duotone" width="24" height="24" />
       </IconButton>
       <IconButton variant="solid" color="contrast">
-        <Heart size={20} />
+        <Icon icon="si:heart-duotone" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="solid" color="muted">
+        <Icon icon="ph:cloud-duotone" width="24" height="24" />
       </IconButton>
       <IconButton variant="solid" color="primary">
-        <Settings size={20} />
+        <Icon icon="ant-design:setting-twotone" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="solid" color="info">
+        <Icon icon="solar:login-bold-duotone" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="solid" color="success">
+        <Icon icon="ic:twotone-folder" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="solid" color="warning">
+        <Icon icon="solar:document-bold-duotone" width="24" height="24" />
       </IconButton>
       <IconButton variant="solid" color="danger">
-        <Loader2 size={20} />
+        <Icon icon="solar:upload-bold-duotone" width="24" height="24" />
       </IconButton>
     </div>
   </div>
@@ -77,13 +89,28 @@ export const OutlinedVariants = () => (
     <h2 className="text-lg font-semibold">Outlined Variants</h2>
     <div className="flex flex-wrap gap-4">
       <IconButton variant="outlined" color="default">
-        <Mail size={20} />
+        <Icon icon="ph:chat-duotone" width="24" height="24" />
       </IconButton>
       <IconButton variant="outlined" color="contrast">
-        <Heart size={20} />
+        <Icon icon="si:heart-duotone" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="outlined" color="muted">
+        <Icon icon="ph:cloud-duotone" width="24" height="24" />
       </IconButton>
       <IconButton variant="outlined" color="primary">
-        <Settings size={20} />
+        <Icon icon="ant-design:setting-twotone" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="outlined" color="info">
+        <Icon icon="solar:login-bold-duotone" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="outlined" color="success">
+        <Icon icon="ic:twotone-folder" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="outlined" color="warning">
+        <Icon icon="solar:document-bold-duotone" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="outlined" color="danger">
+        <Icon icon="solar:upload-bold-duotone" width="24" height="24" />
       </IconButton>
     </div>
   </div>
@@ -94,13 +121,28 @@ export const PastelVariants = () => (
     <h2 className="text-lg font-semibold">Pastel Variants</h2>
     <div className="flex flex-wrap gap-4">
       <IconButton variant="pastel" color="default">
-        <Mail size={20} />
+        <Icon icon="ph:chat-duotone" width="24" height="24" />
       </IconButton>
       <IconButton variant="pastel" color="contrast">
-        <Heart size={20} />
+        <Icon icon="si:heart-duotone" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="pastel" color="muted">
+        <Icon icon="ph:cloud-duotone" width="24" height="24" />
       </IconButton>
       <IconButton variant="pastel" color="primary">
-        <Settings size={20} />
+        <Icon icon="ant-design:setting-twotone" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="pastel" color="info">
+        <Icon icon="solar:login-bold-duotone" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="pastel" color="success">
+        <Icon icon="ic:twotone-folder" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="pastel" color="warning">
+        <Icon icon="solar:document-bold-duotone" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="pastel" color="danger">
+        <Icon icon="solar:upload-bold-duotone" width="24" height="24" />
       </IconButton>
     </div>
   </div>
@@ -109,15 +151,18 @@ export const PastelVariants = () => (
 export const SizeVariants = () => (
   <div className="space-y-4">
     <h2 className="text-lg font-semibold">Size Variants</h2>
-    <div className="flex flex-wrap gap-4 items-center">
-      <IconButton size="sm">
-        <Mail size={20} />
+    <div className="flex gap-4">
+      <IconButton variant="solid" color="primary" size="sm">
+        <Icon icon="ph:chat-duotone" width="16" height="16" />
       </IconButton>
-      <IconButton size="md">
-        <Heart size={20} />
+      <IconButton variant="solid" color="primary" size="md">
+        <Icon icon="si:heart-duotone" width="20" height="20" />
       </IconButton>
-      <IconButton size="lg">
-        <Settings size={20} />
+      <IconButton variant="solid" color="primary" size="lg">
+        <Icon icon="ph:cloud-duotone" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="solid" color="primary" size="xl">
+        <Icon icon="solar:upload-bold-duotone" width="28" height="28" />
       </IconButton>
     </div>
   </div>
@@ -127,20 +172,20 @@ export const ShapeVariants = () => (
   <div className="space-y-4">
     <h2 className="text-lg font-semibold">Shape Variants</h2>
     <div className="flex flex-wrap gap-4">
-      <IconButton shape="straight">
-        <Mail size={20} />
+      <IconButton shape="straight" color="default">
+        <Icon icon="ph:chat-duotone" width="24" height="24" />
       </IconButton>
       <IconButton shape="rounded">
-        <Heart size={20} />
+        <Icon icon="si:heart-duotone" width="24" height="24" />
       </IconButton>
       <IconButton shape="smooth">
-        <Settings size={20} />
+        <Icon icon="ph:cloud-duotone" width="24" height="24" />
       </IconButton>
       <IconButton shape="curved">
-        <Mail size={20} />
+        <Icon icon="ant-design:setting-twotone" width="24" height="24" />
       </IconButton>
       <IconButton shape="full">
-        <Heart size={20} />
+        <Icon icon="solar:login-bold-duotone" width="24" height="24" />
       </IconButton>
     </div>
   </div>
@@ -150,14 +195,29 @@ export const DisabledState = () => (
   <div className="space-y-4">
     <h2 className="text-lg font-semibold">Disabled State</h2>
     <div className="flex flex-wrap gap-4">
-      <IconButton disabled>
-        <Mail size={20} />
+      <IconButton color="default" disabled>
+        <Icon icon="ph:chat-duotone" width="24" height="24" />
       </IconButton>
-      <IconButton disabled variant="outlined" color="primary">
-        <Heart size={20} />
+      <IconButton color="contrast" disabled>
+        <Icon icon="si:heart-duotone" width="24" height="24" />
       </IconButton>
-      <IconButton disabled variant="pastel" color="warning">
-        <Settings size={20} />
+      <IconButton color="muted" disabled>
+        <Icon icon="ph:cloud-duotone" width="24" height="24" />
+      </IconButton>
+      <IconButton color="primary" disabled>
+        <Icon icon="ant-design:setting-twotone" width="24" height="24" />
+      </IconButton>
+      <IconButton color="info" disabled>
+        <Icon icon="solar:login-bold-duotone" width="24" height="24" />
+      </IconButton>
+      <IconButton color="success" disabled>
+        <Icon icon="ic:twotone-folder" width="24" height="24" />
+      </IconButton>
+      <IconButton color="warning" disabled>
+        <Icon icon="solar:document-bold-duotone" width="24" height="24" />
+      </IconButton>
+      <IconButton color="danger" disabled>
+        <Icon icon="solar:upload-bold-duotone" width="24" height="24" />
       </IconButton>
     </div>
   </div>
@@ -167,14 +227,17 @@ export const LoadingState = () => (
   <div className="space-y-4">
     <h2 className="text-lg font-semibold">Loading State</h2>
     <div className="flex flex-wrap gap-4">
-      <IconButton loading>
-        <Mail size={20} />
+      <IconButton variant="solid" color="default" loading>
+        <Icon icon="ph:chat-duotone" width="24" height="24" />
       </IconButton>
-      <IconButton loading>
-        <Heart size={20} />
+      <IconButton variant="solid" color="primary" loading>
+        <Icon icon="ph:chat-duotone" width="24" height="24" />
       </IconButton>
-      <IconButton loading>
-        <Settings size={20} />
+      <IconButton variant="outlined" color="primary" loading>
+        <Icon icon="si:heart-duotone" width="24" height="24" />
+      </IconButton>
+      <IconButton variant="pastel" color="success" loading>
+        <Icon icon="ph:cloud-duotone" width="24" height="24" />
       </IconButton>
     </div>
   </div>
