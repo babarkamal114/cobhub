@@ -1,6 +1,7 @@
 'use client';
 
 import ThemeSwitch from '@/components/theme-toggle';
+import { Select, Option } from '@/components/ui/select';
 import { Typography } from 'ui-components';
 
 export default function Home() {
@@ -16,6 +17,18 @@ export default function Home() {
           meetings, track performance, and streamline workflows—all in one place. Boost productivity
           and keep your team aligned effortlessly.
         </Typography>
+        <Select
+          label="Select your option"
+          options={[
+            { label: 'Option1', value: 'option1' },
+            { label: 'Option2', value: 'option2' },
+            { label: 'Option3', value: 'option3' },
+            { label: 'Option4', value: 'option4' },
+          ]}
+          onChange={(value: Option | Option[] | null) => {
+            console.log('Selected:', value);
+          }}
+        />
       </div>
     </main>
   );
