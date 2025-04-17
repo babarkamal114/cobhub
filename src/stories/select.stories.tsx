@@ -25,6 +25,16 @@ const meta: Meta<typeof Select> = {
     disabled: { control: 'boolean' },
     icon: { control: 'text' },
   },
+  args: {
+    label: 'Select',
+    options: ['Option 1', 'Option 2', 'Option 3'],
+    size: 'md',
+    loading: false,
+    error: '',
+    required: false,
+    disabled: false,
+    icon: '',
+  },
 };
 
 export default meta;
