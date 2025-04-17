@@ -1,5 +1,5 @@
-// components/ui/select.tsx
-'use client';
+o; // components/ui/select.tsx
+('use client');
 
 import { LucideIcon, Loader2 } from 'lucide-react';
 import React, { useState } from 'react';
