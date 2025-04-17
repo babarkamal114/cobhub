@@ -149,4 +149,6 @@ const Select: FC<SelectProps> = ({
   );
 };
 
-export default Select;
+Select.displayName = 'Select';
+
+export { Select };
