@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react';
 import type { VariantProps } from 'class-variance-authority';
 import React, { type FC } from 'react';
 
-import { checkboxVariants } from '../variants';
+import { checkboxVariants } from '../../variants';
 
 interface CheckboxProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'color'>,
