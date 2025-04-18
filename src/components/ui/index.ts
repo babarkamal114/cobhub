@@ -4,10 +4,10 @@ import { Breadcrumb } from './breadcrumb';
 import { Button } from './button';
 import { ButtonLink } from './button-link';
 import { Card } from './card';
-import { Checkbox } from './checkbox';
 import { Dropdown } from './dropdown';
+import { Input, Select } from './form';
+import { Checkbox } from './form/checkbox';
 import { IconButton } from './icon-button';
-import { Input } from './input';
 import { Modal } from './modal';
 import { TrackTabs } from './tab';
 import { Table } from './table';
@@ -28,6 +28,7 @@ export {
   IconButton,
   Input,
   Modal,
+  Select,
   Table,
   Tag,
   ToggleBox,

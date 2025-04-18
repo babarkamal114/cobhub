@@ -135,6 +135,24 @@ export interface ProgressProps {
   label?: string;
 }
 
+export interface SelectProps {
+  label?: string;
+  options: Array<string | { label: string; value: string; disabled?: boolean }>;
+  icon?: string;
+  color?: Color;
+  shape?: Shape;
+  size?: 'sm' | 'md' | 'lg';
+  error?: string;
+  loading?: boolean;
+  className?: string;
+  containerClasses?: string;
+  id?: string;
+  'aria-label'?: string;
+  'aria-describedby'?: string;
+  required?: boolean;
+  disabled?: boolean;
+}
+
 export type Color =
   | 'default'
   | 'contrast'
