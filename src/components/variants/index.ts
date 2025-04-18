@@ -7,6 +7,7 @@ import { checkboxVariants } from './checkbox-varaints';
 import { buttonIconVariants } from './icon-button-variants';
 import { inputVariants } from './input-variants';
 import { progressBarVaraints, progressWrapperVaraints } from './progress-varaints';
+import { selectVariants } from './select-varaints';
 import { tabListStyles, tabStyles } from './tab-variants';
 import { tagVariants } from './tag-varaints';
 import { typographyVariants } from './typography-variants';
@@ -23,6 +24,7 @@ export {
   inputVariants,
   progressWrapperVaraints,
   progressBarVaraints,
+  selectVariants,
   tabListStyles,
   tabStyles,
   tagVariants,
