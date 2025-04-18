@@ -1,5 +1,5 @@
+import { Icon } from '@iconify/react/dist/iconify.js';
 import { Slot } from '@radix-ui/react-slot';
-import { LoaderCircle } from 'lucide-react';
 import * as React from 'react';
 
 import { cn } from '@/lib/utils';
@@ -58,7 +58,12 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       >
         {isLoading && (
           <>
-            <LoaderCircle className="animate-spin" />
+            <Icon
+              icon="line-md:loading-twotone-loop"
+              className="animate-spin"
+              width={24}
+              height={24}
+            />
             {loadingText && (
               <span id={loadingId} className="sr-only">
                 {loadingText}

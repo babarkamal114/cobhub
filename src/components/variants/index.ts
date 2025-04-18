@@ -5,6 +5,7 @@ import { buttonVariants } from './button-variants';
 import { cardVariants } from './card-variants';
 import { checkboxVariants } from './checkbox-varaints';
 import { buttonIconVariants } from './icon-button-variants';
+import { iconboxVariants } from './iconbox-varaints';
 import { inputVariants } from './input-variants';
 import { progressBarVaraints, progressWrapperVaraints } from './progress-varaints';
 import { selectVariants } from './select-varaints';
@@ -21,6 +22,7 @@ export {
   cardVariants,
   checkboxVariants,
   dismissButtonVariants,
+  iconboxVariants,
   inputVariants,
   progressWrapperVaraints,
   progressBarVaraints,

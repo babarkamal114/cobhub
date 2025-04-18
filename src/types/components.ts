@@ -1,8 +1,9 @@
+import type { IconifyIcon } from '@iconify/react';
 import { VariantProps } from 'class-variance-authority';
 import { LucideIcon } from 'lucide-react';
-import { ButtonHTMLAttributes, ReactNode } from 'react';
+import { ButtonHTMLAttributes, HTMLAttributes, ReactNode } from 'react';
 
-import { avatarVariants, buttonVariants, inputVariants } from 'variants';
+import { avatarVariants, buttonVariants, iconboxVariants, inputVariants } from 'variants';
 
 export interface AvatarProps extends VariantProps<typeof avatarVariants> {
   src?: string;
@@ -153,6 +154,15 @@ export interface SelectProps {
   disabled?: boolean;
 }
 
+export interface IconBoxProps
+  extends Omit<HTMLAttributes<HTMLDivElement>, 'color'>,
+    VariantProps<typeof iconboxVariants> {
+  icon: IconifyIcon | string;
+  iconClasses?: string;
+  mask?: Mask;
+  label?: string;
+}
+
 export type Color =
   | 'default'
   | 'contrast'
@@ -166,3 +176,4 @@ export type Color =
 export type Shape = 'straight' | 'rounded' | 'smooth' | 'curved' | 'full';
 export type Variant = 'solid' | 'pastel' | 'outlined';
 export type Size = 'xl' | 'lg' | 'md' | 'sm' | 'xs' | 'xxs' | 'xxxs';
+export type Mask = 'hex' | 'hexed' | 'blob' | 'deca' | 'diamond';

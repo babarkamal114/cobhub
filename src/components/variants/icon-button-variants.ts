@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority';
 
 export const buttonIconVariants = cva(
-  'inline-flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-70 cursor-pointer',
+  'cursor-pointer relative inline-flex items-center justify-center gap-1 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background',
   {
     variants: {
       variant: {
@@ -19,11 +19,11 @@ export const buttonIconVariants = cva(
         xxxs: 'h-4 w-4',
       },
       shape: {
-        straight: '!rounded-none',
-        rounded: '!rounded-md',
-        smooth: '!rounded-lg',
-        curved: '!rounded-xl',
-        full: '!rounded-full',
+        straight: '',
+        rounded: 'rounded-md',
+        smooth: 'rounded-lg',
+        curved: 'rounded-xl',
+        full: 'rounded-full',
       },
       color: {
         default: '',
@@ -34,7 +34,6 @@ export const buttonIconVariants = cva(
         success: '',
         warning: '',
         danger: '',
-        violet: '',
       },
       isDisabled: {
         true: 'opacity-70 cursor-not-allowed',
@@ -48,168 +47,153 @@ export const buttonIconVariants = cva(
         variant: 'solid',
         color: 'default',
         className:
-          'text-default-200 bg-default-500 hover:bg-default-700 active:bg-default-500 focus-visible:ring-default-400',
+          'bg-default-100 hover:enabled:bg-default-200 active:enabled:bg-default-100 hover:enabled:border-default-300 dark:hover:enabled:border-default-600 border border-default-200 dark:border-default-700 text-default-600 dark:text-default-100 dark:bg-default-800 dark:hover:enabled:bg-default-700 dark:active:enabled:bg-default-800 focus-visible:ring-default-500',
       },
       {
         variant: 'solid',
         color: 'contrast',
         className:
-          'text-default-200 bg-default-900 hover:bg-default-800 active:bg-default-700 focus-visible:ring-contrast-400',
+          'bg-white hover:enabled:bg-muted-50 active:enabled:bg-muted-100 hover:enabled:border-muted-300 dark:hover:enabled:border-muted-700 border border-muted-200 dark:border-muted-800 text-muted-800 dark:text-muted-100 dark:bg-muted-950 dark:hover:enabled:bg-muted-900 dark:active:enabled:bg-muted-950 focus-visible:ring-muted-500',
       },
       {
         variant: 'solid',
         color: 'muted',
         className:
-          'text-muted-600 bg-muted-200 hover:bg-muted-300 dark:bg-muted-600 dark:hover:bg-muted-700 focus-visible:ring-muted-400',
+          'border border-muted-200 dark:border-muted-700 bg-muted-200 dark:bg-muted-800 text-muted-500 dark:text-muted-100 enabled:hover:bg-muted-300 dark:enabled:hover:bg-muted-700 active:enabled:bg-muted-100 dark:active:enabled:bg-muted-800 focus-visible:ring-muted-500',
       },
       {
         variant: 'solid',
         color: 'primary',
         className:
-          'text-default-200 bg-primary-500 hover:bg-primary-700 active:bg-primary-500 focus-visible:ring-primary-400',
+          'border border-primary-500 bg-primary-500 text-white enabled:hover:bg-primary-600 active:enabled:bg-primary-400 focus-visible:ring-primary-500',
       },
       {
         variant: 'solid',
         color: 'info',
         className:
-          'text-contrast bg-info-600 hover:bg-info-700 active:bg-info-500 focus-visible:ring-info-400',
+          'border border-info-500 bg-info-500 text-white enabled:hover:bg-info-600 active:enabled:bg-info-400 focus-visible:ring-info-500',
       },
       {
         variant: 'solid',
         color: 'success',
         className:
-          'text-contrast bg-success-600 hover:bg-success-700 active:bg-success-500 focus-visible:ring-success-400',
+          'border border-success-500 bg-success-500 text-white enabled:hover:bg-success-600 active:enabled:bg-success-400 focus-visible:ring-success-500',
       },
       {
         variant: 'solid',
         color: 'warning',
         className:
-          'text-contrast bg-warning-600 hover:bg-warning-700 active:bg-warning-500 focus-visible:ring-warning-400',
+          'border border-warning-500 bg-warning-500 text-white enabled:hover:bg-warning-600 active:enabled:bg-warning-400 focus-visible:ring-warning-500',
       },
       {
         variant: 'solid',
         color: 'danger',
         className:
-          'text-contrast bg-danger-600 hover:bg-danger-700 active:bg-danger-500 focus-visible:ring-danger-400',
-      },
-      {
-        variant: 'solid',
-        color: 'violet',
-        className:
-          'text-contrast bg-violet-600 hover:bg-violet-700 active:bg-violet-500 focus-visible:ring-violet-400',
-      },
-      {
-        variant: 'outlined',
-        color: 'default',
-        className:
-          'border border-default-500 text-default-600 hover:bg-default-50 focus-visible:ring-default-400',
-      },
-      {
-        variant: 'outlined',
-        color: 'contrast',
-        className:
-          'border border-black text-black hover:bg-default-50 focus-visible:ring-contrast-400',
-      },
-      {
-        variant: 'outlined',
-        color: 'muted',
-        className:
-          'border border-muted-400 text-muted-600 hover:bg-default-50 focus-visible:ring-muted-400',
-      },
-      {
-        variant: 'outlined',
-        color: 'primary',
-        className:
-          'border border-primary-600 text-primary-600 hover:bg-primary-50 focus-visible:ring-primary-400',
-      },
-      {
-        variant: 'outlined',
-        color: 'info',
-        className:
-          'border border-info-600 text-info-600 hover:bg-info-50 focus-visible:ring-info-400',
-      },
-      {
-        variant: 'outlined',
-        color: 'success',
-        className:
-          'border border-success-600 text-success-600 hover:bg-success-50 focus-visible:ring-success-400',
-      },
-      {
-        variant: 'outlined',
-        color: 'warning',
-        className:
-          'border border-warning-600 text-warning-600 hover:bg-warning-50 focus-visible:ring-warning-400',
-      },
-      {
-        variant: 'outlined',
-        color: 'danger',
-        className:
-          'border border-danger-600 text-danger-600 hover:bg-danger-50 focus-visible:ring-danger-400',
-      },
-      {
-        variant: 'outlined',
-        color: 'violet',
-        className:
-          'border border-violet-600 text-violet-600 hover:bg-violet-50 focus-visible:ring-violet-400',
+          'border border-danger-500 bg-danger-500 text-white enabled:hover:bg-danger-600 active:enabled:bg-danger-400 focus-visible:ring-danger-500',
       },
       {
         variant: 'pastel',
         color: 'default',
         className:
-          'bg-default-200 text-default-600 hover:bg-default-300 focus-visible:ring-default-400',
+          'border-none bg-default-300/30 dark:bg-muted-300/10 text-default-500 dark:text-muted-400 enabled:hover:bg-muted-300/60 dark:enabled:hover:bg-muted-300/20 active:enabled:bg-muted-300/30 dark:active:enabled:bg-muted-300/10 focus-visible:ring-default-500',
       },
       {
         variant: 'pastel',
         color: 'contrast',
         className:
-          'bg-default-900 text-default-300 hover:bg-default-800 focus-visible:ring-default-400',
+          'border-none bg-muted-300/30 dark:bg-muted-300/10 text-muted-500 dark:text-muted-400 enabled:hover:bg-muted-300/60 dark:enabled:hover:bg-muted-300/20 active:enabled:bg-muted-300/30 dark:active:enabled:bg-muted-300/10 focus-visible:ring-muted-500',
       },
       {
         variant: 'pastel',
         color: 'muted',
-        className: 'bg-muted-100 text-muted-600 hover:bg-muted-200 focus-visible:ring-muted-400',
+        className:
+          'bg-muted-300/30 dark:bg-muted-300/10 text-muted-500 dark:text-muted-400 enabled:hover:bg-muted-300/60 dark:enabled:hover:bg-muted-300/20 active:enabled:bg-muted-300/30 dark:active:enabled:bg-muted-300/10 focus-visible:ring-muted-500',
       },
       {
         variant: 'pastel',
         color: 'primary',
         className:
-          'bg-primary-100 text-primary-600 hover:bg-primary-200 focus-visible:ring-primary-400',
+          'bg-primary-500/10 dark:bg-primary-500/20 text-primary-500 enabled:hover:bg-primary-500/20 dark:enabled:hover:bg-primary-500/30 active:enabled:bg-primary-500/10 dark:active:enabled:bg-primary-500/10 focus-visible:ring-primary-500',
       },
       {
         variant: 'pastel',
         color: 'info',
-        className: 'bg-info-100 text-info-600 hover:bg-info-200 focus-visible:ring-info-400',
+        className:
+          'bg-info-500/10 dark:bg-info-500/20 text-info-500 enabled:hover:bg-info-500/20 dark:enabled:hover:bg-info-500/30 active:enabled:bg-info-500/10 dark:active:enabled:bg-info-500/10 focus-visible:ring-info-500',
       },
       {
         variant: 'pastel',
         color: 'success',
         className:
-          'bg-success-100 text-success-600 hover:bg-success-200 focus-visible:ring-success-400',
+          'bg-success-500/10 dark:bg-success-500/20 text-success-500 enabled:hover:bg-success-500/20 dark:enabled:hover:bg-success-500/30 active:enabled:bg-success-500/10 dark:active:enabled:bg-success-500/10 focus-visible:ring-success-500',
       },
       {
         variant: 'pastel',
         color: 'warning',
         className:
-          'bg-warning-100 text-warning-600 hover:bg-warning-200 focus-visible:ring-warning-400',
+          'bg-warning-500/10 dark:bg-warning-500/20 text-warning-500 enabled:hover:bg-warning-500/20 dark:enabled:hover:bg-warning-500/30 active:enabled:bg-warning-500/10 dark:active:enabled:bg-warning-500/10 focus-visible:ring-warning-500',
       },
       {
         variant: 'pastel',
         color: 'danger',
         className:
-          'bg-danger-100 text-danger-600 hover:bg-danger-200 focus-visible:ring-danger-400',
+          'bg-danger-500/10 dark:bg-danger-500/20 text-danger-500 enabled:hover:bg-danger-500/20 dark:enabled:hover:bg-danger-500/30 active:enabled:bg-danger-500/10 dark:active:enabled:bg-danger-500/10 focus-visible:ring-danger-500',
       },
       {
-        variant: 'pastel',
-        color: 'violet',
+        variant: 'outlined',
+        color: 'default',
         className:
-          'bg-violet-100 text-violet-600 hover:bg-violet-200 focus-visible:ring-violet-400',
+          'border border-muted-300 dark:border-muted-700 text-muted-500 hover:bg-white hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 active:enabled:bg-muted-50 dark:active:enabled:bg-muted-700 hover:enabled:text-muted-600 dark:hover:enabled:text-muted-100 focus-visible:ring-muted-500',
+      },
+      {
+        variant: 'outlined',
+        color: 'contrast',
+        className:
+          'border border-muted-300 dark:border-muted-700 text-muted-500 hover:bg-white hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-950 active:enabled:bg-muted-50 dark:active:enabled:bg-muted-900 hover:enabled:text-muted-600 dark:hover:enabled:text-muted-100 focus-visible:ring-muted-500',
+      },
+      {
+        variant: 'outlined',
+        color: 'muted',
+        className:
+          'border border-muted-300 dark:border-muted-700 text-muted-500 hover:bg-white hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 active:enabled:bg-muted-50 dark:active:enabled:bg-muted-700 hover:enabled:text-muted-600 dark:hover:enabled:text-muted-100 focus-visible:ring-muted-500',
+      },
+      {
+        variant: 'outlined',
+        color: 'primary',
+        className:
+          'border border-primary-500 text-primary-500 hover:bg-primary-500 active:enabled:bg-primary-400 hover:text-white focus-visible:ring-primary-500',
+      },
+      {
+        variant: 'outlined',
+        color: 'info',
+        className:
+          'border border-info-500 text-info-500 hover:bg-info-500 active:enabled:bg-info-400 hover:text-white focus-visible:ring-info-500',
+      },
+      {
+        variant: 'outlined',
+        color: 'success',
+        className:
+          'border border-success-500 text-success-500 hover:bg-success-500 active:enabled:bg-success-400 hover:text-white focus-visible:ring-success-500',
+      },
+      {
+        variant: 'outlined',
+        color: 'warning',
+        className:
+          'border border-warning-500 text-warning-500 hover:bg-warning-500 active:enabled:bg-warning-400 hover:text-white focus-visible:ring-warning-500',
+      },
+      {
+        variant: 'outlined',
+        color: 'danger',
+        className:
+          'border border-danger-500 text-danger-500 hover:bg-danger-500 active:enabled:bg-danger-400 hover:text-white focus-visible:ring-danger-500',
       },
     ],
+
     defaultVariants: {
       variant: 'solid',
       size: 'md',
       shape: 'rounded',
-      color: 'primary',
+      color: 'default',
     },
   }
 );

@@ -1,13 +1,4 @@
-import {
-  Circle,
-  Square,
-  Heart,
-  Loader2,
-  AlertTriangle,
-  CheckCircle,
-  Info,
-  ArrowRight,
-} from 'lucide-react';
+import { Icon } from '@iconify/react/dist/iconify.js';
 import React from 'react';
 
 import { ButtonProps } from 'types';
@@ -50,7 +41,6 @@ export default {
     color: 'primary',
     isDisabled: false,
     isLoading: false,
-    asChild: false,
     loadingText: 'Loading...',
   },
 };
@@ -126,7 +116,7 @@ export const PastelVariants = () => (
 export const OutlinedVariants = () => (
   <div className="space-y-4">
     <h2 className="text-lg font-semibold">Outlined Variants</h2>
-    <div className="flex flex-wrap gap-4">
+    <div className="flex flex-wrap gap-4 mt-8">
       <Button variant="outlined" color="default">
         Default
       </Button>
@@ -170,7 +160,7 @@ export const ShapeVariants = () => (
   <div className="space-y-4">
     <h2 className="text-lg font-semibold">Shape Variants</h2>
     <div className="flex flex-wrap gap-4">
-      <Button shape="straight">Straight</Button>
+      <Button shape="straight">Default</Button>
       <Button shape="rounded">Rounded</Button>
       <Button shape="smooth">Smooth</Button>
       <Button shape="curved">Curved</Button>
@@ -215,29 +205,40 @@ export const LoadingState = () => (
 export const WithIcons = () => (
   <div className="space-y-4">
     <h2 className="text-lg font-semibold">Buttons with Icons</h2>
-    <div className="flex flex-wrap gap-4">
-      <Button variant="outlined" leftIcon={<Circle className="w-4 h-4" />}>
-        Circle
+    <div className="flex flex-wrap gap-4 mt-8">
+      <Button leftIcon={<Icon icon="si:moon-duotone" width="24" height="24" />}>Default</Button>
+      <Button color="contrast" leftIcon={<Icon icon="ph:chat-duotone" width="24" height="24" />}>
+        Contrast
       </Button>
-      <Button rightIcon={<Square className="w-4 h-4" />}>Square</Button>
       <Button
-        variant="pastel"
-        leftIcon={<Heart className="w-4 h-4" />}
-        rightIcon={<ArrowRight className="w-4 h-4" />}
+        color="muted"
+        leftIcon={<Icon icon="icon-park-twotone:folder-success" width="24" height="24" />}
       >
-        Heart
+        Muted
       </Button>
-      <Button isLoading leftIcon={<Loader2 className="w-4 h-4" />}>
-        Loading
+      <Button
+        color="primary"
+        leftIcon={<Icon icon="solar:cpu-line-duotone" width="24" height="24" />}
+      >
+        Primary
       </Button>
-      <Button variant="solid" color="danger" leftIcon={<AlertTriangle className="w-4 h-4" />}>
-        Error
+      <Button
+        color="info"
+        leftIcon={<Icon icon="ant-design:dashboard-twotone" width="24" height="24" />}
+      >
+        Info
       </Button>
-      <Button variant="solid" color="success" leftIcon={<CheckCircle className="w-4 h-4" />}>
+      <Button
+        color="success"
+        leftIcon={<Icon icon="solar:keyboard-bold-duotone" width="24" height="24" />}
+      >
         Success
       </Button>
-      <Button variant="solid" color="info" leftIcon={<Info className="w-4 h-4" />}>
-        Info
+      <Button color="warning" rightIcon={<Icon icon="si:alert-duotone" width="24" height="24" />}>
+        Warning
+      </Button>
+      <Button color="danger" rightIcon={<Icon icon="ph:chat-duotone" width="24" height="24" />}>
+        Danger
       </Button>
     </div>
   </div>

@@ -1,5 +1,5 @@
+import { Icon } from '@iconify/react/dist/iconify.js';
 import type { VariantProps } from 'class-variance-authority';
-import { LoaderCircle } from 'lucide-react';
 import React, { type ButtonHTMLAttributes, type FC } from 'react';
 
 import { cn } from '@/lib/utils';
@@ -24,15 +24,6 @@ const IconButton: FC<IconButtonProps> = ({
 }) => {
   const isButtonDisabled = loading;
 
-  const loaderColorClass = buttonIconVariants({
-    color,
-    variant,
-    size,
-    shape,
-  })
-    .split(' ')
-    .find(cls => cls.includes('text-') || cls.includes('bg-'));
-
   return (
     <button
       className={cn(
@@ -42,7 +33,6 @@ const IconButton: FC<IconButtonProps> = ({
           color,
           size,
         }),
-        `shrink-0 ${loading ? 'pointer-events-none relative !text-transparent' : ''}`,
         classes
       )}
       disabled={isButtonDisabled}
@@ -50,7 +40,12 @@ const IconButton: FC<IconButtonProps> = ({
       {...props}
     >
       {loading ? (
-        <LoaderCircle className={`animate-spin absolute ${loaderColorClass}`} />
+        <Icon
+          icon="line-md:loading-twotone-loop"
+          className="animate-spin absolute text-current"
+          width={24}
+          height={24}
+        />
       ) : (
         children
       )}
