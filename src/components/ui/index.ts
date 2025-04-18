@@ -7,6 +7,7 @@ import { Card } from './card';
 import { Dropdown } from './dropdown';
 import { Input, Select } from './form';
 import { Checkbox } from './form/checkbox';
+import { IconBox } from './icon-box';
 import { IconButton } from './icon-button';
 import { Modal } from './modal';
 import { TrackTabs } from './tab';
@@ -25,6 +26,7 @@ export {
   Card,
   Checkbox,
   Dropdown,
+  IconBox,
   IconButton,
   Input,
   Modal,
