@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { useState } from 'react';
 
-import ToggleSwitch from '@/components/ui/form/toggle-switch';
+import { ToggleSwitch } from 'ui-components';
 
 const meta: Meta<typeof ToggleSwitch> = {
   title: 'UI/ToggleSwitch',
