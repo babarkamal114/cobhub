@@ -20,8 +20,6 @@ export const selectVariants = cva(
         success:
           'border border-success-500 bg-success-50 text-success-700 placeholder:text-success-400 hover:enabled:border-success-600 focus-visible:ring-success-500 dark:border-success-700 dark:bg-success-900/30 dark:text-success-300 dark:placeholder:text-success-600',
         info: 'border border-info-500 bg-info-50 text-info-700 placeholder:text-info-400 hover:enabled:border-info-600 focus-visible:ring-info-500 dark:border-info-700 dark:bg-info-900/30 dark:text-info-300 dark:placeholder:text-info-600',
-        violet:
-          'border border-violet-500 bg-violet-50 text-violet-700 placeholder:text-violet-400 hover:enabled:border-violet-600 focus-visible:ring-violet-500 dark:border-violet-700 dark:bg-violet-900 dark:text-violet-300 dark:placeholder:text-violet-600',
       },
       shape: {
         straight: '',

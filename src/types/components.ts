@@ -163,6 +163,22 @@ export interface IconBoxProps
   label?: string;
 }
 
+export interface RangeSliderProps {
+  value: number;
+  min?: number;
+  max?: number;
+  steps?: boolean | number[];
+  valuePrefix?: string;
+  valueSuffix?: string;
+  legend?: boolean;
+  color?: Color;
+  orientation?: 'horizontal' | 'vertical';
+  invert?: boolean;
+  tooltip?: boolean;
+  handleHover?: boolean;
+  onSliderChange: (value: number) => void;
+}
+
 export type Color =
   | 'default'
   | 'contrast'
@@ -171,8 +187,7 @@ export type Color =
   | 'info'
   | 'success'
   | 'warning'
-  | 'danger'
-  | 'violet';
+  | 'danger';
 export type Shape = 'straight' | 'rounded' | 'smooth' | 'curved' | 'full';
 export type Variant = 'solid' | 'pastel' | 'outlined';
 export type Size = 'xl' | 'lg' | 'md' | 'sm' | 'xs' | 'xxs' | 'xxxs';

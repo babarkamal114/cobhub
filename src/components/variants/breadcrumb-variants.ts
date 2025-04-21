@@ -11,7 +11,6 @@ export const breadcrumbVariants = cva('flex items-center text-sm', {
       success: 'text-success-600 dark:text-success-400',
       warning: 'text-warning-600 dark:text-warning-400',
       danger: 'text-danger-600 dark:text-danger-400',
-      violet: 'text-violet-600 dark:text-violet-400',
     },
   },
   defaultVariants: {

@@ -13,7 +13,6 @@ export const checkboxVariants = cva(
         success: 'bg-success-500 border-success-500',
         warning: 'bg-warning-500 border-warning-500',
         danger: 'bg-danger-500 border-danger-500',
-        violet: 'bg-violet-500 border-violet-500',
       },
       shape: {
         straight: '',

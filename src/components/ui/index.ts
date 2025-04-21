@@ -1,3 +1,4 @@
+import { RangeSlider } from './addons';
 import { Alert } from './alert';
 import { Avatar, AvatarGroup } from './avatar';
 import { Breadcrumb } from './breadcrumb';
@@ -30,6 +31,7 @@ export {
   IconButton,
   Input,
   Modal,
+  RangeSlider,
   Select,
   Table,
   Tag,

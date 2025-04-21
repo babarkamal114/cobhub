@@ -35,7 +35,6 @@ export const buttonVariants = cva(
         success: '',
         warning: '',
         danger: '',
-        violet: '',
       },
       isDisabled: {
         true: 'opacity-70 cursor-not-allowed',

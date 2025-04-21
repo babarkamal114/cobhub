@@ -34,8 +34,6 @@ export const avatarVariants = cva('relative flex shrink-0 items-center justify-c
         'bg-warning-600 text-contrast hover:bg-warning-700 dark:bg-warning-500 dark:hover:bg-warning-600',
       danger:
         'bg-danger-600 text-contrast hover:bg-danger-700 dark:bg-danger-500 dark:hover:bg-danger-600',
-      violet:
-        'bg-violet-600 text-contrast hover:bg-violet-700 dark:bg-violet-500 dark:hover:bg-violet-600',
     },
     overlaps: {
       true: '',
