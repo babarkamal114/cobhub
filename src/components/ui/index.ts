@@ -6,7 +6,7 @@ import { Button } from './button';
 import { ButtonLink } from './button-link';
 import { Card } from './card';
 import { Dropdown } from './dropdown';
-import { Input, Select } from './form';
+import { Input, Select, ToggleSwitch } from './form';
 import { Checkbox } from './form/checkbox';
 import { IconBox } from './icon-box';
 import { IconButton } from './icon-button';
@@ -36,6 +36,7 @@ export {
   Table,
   Tag,
   ToggleBox,
+  ToggleSwitch,
   TrackTabs,
   Typography,
 };
