@@ -14,6 +14,7 @@ import {
   Shape,
   Size,
   ToggleBoxProps,
+  ToggleSwitchProps,
   TrackTabsProps,
   Variant,
 } from './components';
@@ -36,6 +37,7 @@ export type {
   Size,
   Sizes,
   ToggleBoxProps,
+  ToggleSwitchProps,
   TrackTabsProps,
   Variant,
 };

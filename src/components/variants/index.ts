@@ -11,6 +11,7 @@ import { progressBarVaraints, progressWrapperVaraints } from './progress-varaint
 import { selectVariants } from './select-varaints';
 import { tabListStyles, tabStyles } from './tab-variants';
 import { tagVariants } from './tag-varaints';
+import { toggleSwitchVariants } from './toggle-swtich-varaints';
 import { typographyVariants } from './typography-variants';
 
 export {
@@ -24,11 +25,12 @@ export {
   dismissButtonVariants,
   iconboxVariants,
   inputVariants,
-  progressWrapperVaraints,
   progressBarVaraints,
+  progressWrapperVaraints,
   selectVariants,
   tabListStyles,
   tabStyles,
   tagVariants,
+  toggleSwitchVariants,
   typographyVariants,
 };
