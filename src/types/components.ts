@@ -3,7 +3,13 @@ import { VariantProps } from 'class-variance-authority';
 import { LucideIcon } from 'lucide-react';
 import { ButtonHTMLAttributes, HTMLAttributes, ReactNode } from 'react';
 
-import { avatarVariants, buttonVariants, iconboxVariants, inputVariants } from 'variants';
+import {
+  avatarVariants,
+  buttonVariants,
+  iconboxVariants,
+  inputVariants,
+  toggleSwitchVariants,
+} from 'variants';
 
 export interface AvatarProps extends VariantProps<typeof avatarVariants> {
   src?: string;
@@ -177,6 +183,17 @@ export interface RangeSliderProps {
   tooltip?: boolean;
   handleHover?: boolean;
   onSliderChange: (value: number) => void;
+}
+
+export interface ToggleSwitchProps
+  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'color'>,
+    VariantProps<typeof toggleSwitchVariants> {
+  checked?: boolean;
+  startIcon?: string | IconifyIcon;
+  endIcon?: string | IconifyIcon;
+  startColor?: Color;
+  endColor?: Color;
+  label?: string;
 }
 
 export type Color =
