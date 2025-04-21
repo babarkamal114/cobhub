@@ -12,17 +12,7 @@ export default {
     shape: { control: 'select', options: ['straight', 'rounded', 'smooth', 'curved', 'full'] },
     color: {
       control: 'select',
-      options: [
-        'default',
-        'contrast',
-        'muted',
-        'primary',
-        'info',
-        'success',
-        'warning',
-        'danger',
-        'violet',
-      ],
+      options: ['default', 'contrast', 'muted', 'primary', 'info', 'success', 'warning', 'danger'],
     },
     src: { control: 'text' },
     text: { control: 'text' },
@@ -64,7 +54,6 @@ export const DifferentShapes = () => (
   <div className="flex flex-row gap-2">
     <Avatar shape="straight" text="S" color="primary" />
     <Avatar shape="rounded" text="R" color="success" />
-    <Avatar shape="smooth" text="S" color="violet" />
     <Avatar shape="curved" text="C" color="danger" />
     <Avatar shape="full" text="F" color="warning" />
   </div>

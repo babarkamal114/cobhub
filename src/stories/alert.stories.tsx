@@ -9,17 +9,7 @@ const meta: Meta<typeof Alert> = {
   argTypes: {
     color: {
       control: 'select',
-      options: [
-        'default',
-        'contrast',
-        'muted',
-        'primary',
-        'info',
-        'success',
-        'warning',
-        'danger',
-        'violet',
-      ],
+      options: ['default', 'contrast', 'muted', 'primary', 'info', 'success', 'warning', 'danger'],
     },
     shape: {
       control: 'select',
@@ -105,7 +95,6 @@ export const Icons: Story = {
         label="Danger color - Alert Octagon"
       />
       <Alert {...args} color="warning" icon="lucide:star" label="Warning color - Star" />
-      <Alert {...args} color="violet" icon="lucide:moon" label="Violet color - Moon" />
     </div>
   ),
 };
@@ -127,7 +116,6 @@ export const Color: Story = {
       <Alert {...args} color="success" label="Success color" />
       <Alert {...args} color="warning" label="Warning color" />
       <Alert {...args} color="danger" label="Danger color" />
-      <Alert {...args} color="violet" label="Violet color" />
     </div>
   ),
 };

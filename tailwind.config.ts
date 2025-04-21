@@ -36,7 +36,6 @@ const config: Config = {
         success: colors.green,
         warning: colors.amber,
         danger: colors.red,
-        violet: colors.violet,
       },
       keyframes: {
         indeterminate: {

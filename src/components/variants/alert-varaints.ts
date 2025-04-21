@@ -18,8 +18,6 @@ export const alertVariants = cva('flex items-center gap-2 border py-3 pe-2 ps-4'
         'border-warning-500 bg-warning-500/10 text-warning-500 dark:border-warning-400 dark:bg-warning-400/10 dark:text-warning-300',
       danger:
         'border-danger-500 bg-danger-500/10 text-danger-500 dark:border-danger-400 dark:bg-danger-400/10 dark:text-danger-300',
-      violet:
-        'border-violet-500 bg-violet-500/10 text-violet-600 dark:border-violet-400 dark:bg-violet-400/10 dark:text-violet-300',
     },
 
     shape: {
@@ -56,8 +54,6 @@ export const dismissButtonVariants = cva(
           'text-warning-500 hover:bg-warning-500/20 focus:ring-warning-300 dark:focus:ring-warning-500',
         danger:
           'text-danger-500 hover:bg-danger-500/20 focus:ring-danger-300 dark:focus:ring-danger-500',
-        violet:
-          'text-violet-600 hover:bg-violet-500/20 focus:ring-violet-300 dark:focus:ring-violet-500',
       },
     },
     defaultVariants: {

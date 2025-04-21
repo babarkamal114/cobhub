@@ -43,7 +43,6 @@ export const progressBarVaraints = cva(
         success: 'bg-success-600',
         warning: 'bg-warning-600',
         danger: 'bg-danger-600',
-        violet: 'bg-violet-600',
       },
       shape: {
         straight: 'rounded-none',

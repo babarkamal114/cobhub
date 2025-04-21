@@ -10,7 +10,6 @@ export const cardVariants = cva('relative w-full transition-all duration-300 p-4
       success: 'bg-success-100 text-success-700 dark:text-success-400 border border-success-300',
       warning: 'bg-warning-100 text-warning-700 dark:text-warning-400 border border-warning-300',
       danger: 'bg-danger-100 text-danger-700 dark:text-danger-400 border border-danger-300',
-      violet: 'bg-violet-100 text-violet-700 dark:text-violet-400 border border-violet-300',
       muted: 'bg-muted-100 text-muted-700 dark:text-muted-400 border border-muted-300',
       contrast:
         'bg-contrast-100 text-contrast-700 dark:text-contrast-400 border border-contrast-300',
