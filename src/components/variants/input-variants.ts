@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority';
 
 export const inputVariants = cva(
-  'flex w-full rounded-md border px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium bg-default-50 dark:bg-default-800 placeholder:text-default-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 dark:ring-offset-default-950 dark:placeholder:text-default-400 dark:focus-visible:ring-primary-500',
+  'flex w-full rounded-md border px-3 py-2 text-sm text-default-600 dark:text-default-300 ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium bg-default-50 dark:bg-default-800 placeholder:text-default-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 dark:ring-offset-default-950 dark:placeholder:text-default-400 dark:focus-visible:ring-primary-500',
   {
     variants: {
       variant: {

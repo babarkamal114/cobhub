@@ -1,7 +1,13 @@
 import type { IconifyIcon } from '@iconify/react';
 import { VariantProps } from 'class-variance-authority';
 import { LucideIcon } from 'lucide-react';
-import { ButtonHTMLAttributes, HTMLAttributes, ReactNode, TextareaHTMLAttributes } from 'react';
+import {
+  ButtonHTMLAttributes,
+  HTMLAttributes,
+  InputHTMLAttributes,
+  ReactNode,
+  TextareaHTMLAttributes,
+} from 'react';
 
 import {
   avatarVariants,
@@ -214,6 +220,31 @@ export interface TextAreaProps
   loading?: boolean;
   color?: Color;
   shape?: Shape;
+}
+
+export interface ComboBoxItem {
+  id?: string;
+  name: string;
+  icon?: IconifyIcon | string;
+  image?: string;
+}
+
+export interface ComboBoxProps
+  extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size' | 'color'>,
+    VariantProps<typeof inputVariants> {
+  label?: string;
+  multiple?: boolean;
+  error?: string;
+  value?: any;
+  selected: any;
+  setSelected: any;
+  disabled?: boolean;
+  loading?: boolean;
+  items?: ComboBoxItem[];
+  classNames?: string;
+  color?: Color;
+  shape?: Shape;
+  size?: 'sm' | 'md' | 'lg';
 }
 
 export type Color =
