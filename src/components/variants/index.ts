@@ -8,6 +8,7 @@ import { buttonIconVariants } from './icon-button-variants';
 import { iconboxVariants } from './iconbox-varaints';
 import { inputVariants } from './input-variants';
 import { progressBarVaraints, progressWrapperVaraints } from './progress-varaints';
+import { radioVariants } from './radio-varaints';
 import { selectVariants } from './select-varaints';
 import { tabListStyles, tabStyles } from './tab-variants';
 import { tagVariants } from './tag-varaints';
@@ -27,6 +28,7 @@ export {
   inputVariants,
   progressBarVaraints,
   progressWrapperVaraints,
+  radioVariants,
   selectVariants,
   tabListStyles,
   tabStyles,
