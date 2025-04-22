@@ -68,7 +68,7 @@ const ComboBox: FC<ComboBoxProps> = ({
               aria-describedby={error ? `${inputId}-error` : undefined}
               className={cn(
                 inputVariants({
-                  inputSize,
+                  size,
                   color,
                   shape,
                   className: `
