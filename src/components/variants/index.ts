@@ -12,6 +12,7 @@ import { radioVariants } from './radio-varaints';
 import { selectVariants } from './select-varaints';
 import { tabListStyles, tabStyles } from './tab-variants';
 import { tagVariants } from './tag-varaints';
+import { textareaVariants } from './text-area-varaints';
 import { toggleSwitchVariants } from './toggle-swtich-varaints';
 import { typographyVariants } from './typography-variants';
 
@@ -33,6 +34,7 @@ export {
   tabListStyles,
   tabStyles,
   tagVariants,
+  textareaVariants,
   toggleSwitchVariants,
   typographyVariants,
 };

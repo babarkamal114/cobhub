@@ -1,7 +1,7 @@
 import type { IconifyIcon } from '@iconify/react';
 import { VariantProps } from 'class-variance-authority';
 import { LucideIcon } from 'lucide-react';
-import { ButtonHTMLAttributes, HTMLAttributes, ReactNode } from 'react';
+import { ButtonHTMLAttributes, HTMLAttributes, ReactNode, TextareaHTMLAttributes } from 'react';
 
 import {
   avatarVariants,
@@ -9,6 +9,7 @@ import {
   iconboxVariants,
   inputVariants,
   radioVariants,
+  textareaVariants,
   toggleSwitchVariants,
 } from 'variants';
 
@@ -202,6 +203,17 @@ export interface RadioProps
     VariantProps<typeof radioVariants> {
   label: string;
   color?: Color;
+}
+
+export interface TextAreaProps
+  extends Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, 'color'>,
+    VariantProps<typeof textareaVariants> {
+  label?: string;
+  error?: string;
+  resize?: boolean;
+  loading?: boolean;
+  color?: Color;
+  shape?: Shape;
 }
 
 export type Color =
