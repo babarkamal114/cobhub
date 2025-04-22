@@ -8,6 +8,7 @@ import {
   buttonVariants,
   iconboxVariants,
   inputVariants,
+  radioVariants,
   toggleSwitchVariants,
 } from 'variants';
 
@@ -194,6 +195,13 @@ export interface ToggleSwitchProps
   startColor?: Color;
   endColor?: Color;
   label?: string;
+}
+
+export interface RadioProps
+  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'color'>,
+    VariantProps<typeof radioVariants> {
+  label: string;
+  color?: Color;
 }
 
 export type Color =

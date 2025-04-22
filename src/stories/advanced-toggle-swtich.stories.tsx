@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { AdvancedToggleSwitch } from 'ui-components';
 
 const meta: Meta<typeof AdvancedToggleSwitch> = {
-  title: 'Components/AdvancedToggleSwitch',
+  title: 'UI/AdvancedToggleSwitch',
   component: AdvancedToggleSwitch,
   argTypes: {
     startIcon: {
