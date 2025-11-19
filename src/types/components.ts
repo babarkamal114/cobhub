@@ -3,6 +3,7 @@ import { VariantProps } from 'class-variance-authority';
 import { LucideIcon } from 'lucide-react';
 import { ButtonHTMLAttributes, HTMLAttributes, ReactNode, TextareaHTMLAttributes } from 'react';
 
+import { loaderVariants } from '@/components/variants/loader-variants';
 import {
   avatarVariants,
   buttonVariants,
@@ -214,6 +215,15 @@ export interface TextAreaProps
   loading?: boolean;
   color?: Color;
   shape?: Shape;
+}
+
+export interface LoaderProps
+  extends Omit<React.HTMLAttributes<HTMLSpanElement>, 'color'>,
+    VariantProps<typeof loaderVariants> {
+  thickness?: number;
+  size?: Size;
+  color: Color;
+  classNames?: string;
 }
 
 export type Color =

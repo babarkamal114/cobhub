@@ -1,7 +1,8 @@
 'use client';
 
 import ThemeSwitch from '@/components/theme-toggle';
-import { Typography } from 'ui-components';
+import Loader from '@/components/ui/loader';
+import { Avatar, Button, ButtonLink, Input, Tag, Typography } from 'ui-components';
 
 export default function Home() {
   return (
@@ -16,6 +17,16 @@ export default function Home() {
           meetings, track performance, and streamline workflows—all in one place. Boost productivity
           and keep your team aligned effortlessly.
         </Typography>
+        <Button>this is a test button</Button>
+        <Tag variant={'solid'} color={'default'} shape={'full'}>
+          this is a tag
+        </Tag>
+        <Input label="something" />
+        <Avatar text="AK" />
+        <ButtonLink href="something" isLoading={false}>
+          soemthing
+        </ButtonLink>
+        <Loader color="default" size="lg" thickness={10} />
       </div>
     </main>
   );
