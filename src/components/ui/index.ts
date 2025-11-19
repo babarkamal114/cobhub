@@ -10,6 +10,7 @@ import { AdvancedToggleSwitch, Input, Radio, Select, Textarea, ToggleSwitch } fr
 import { Checkbox } from './form/checkbox';
 import { IconBox } from './icon-box';
 import { IconButton } from './icon-button';
+import { Loader } from './loader';
 import { Modal } from './modal';
 import { TrackTabs } from './tab';
 import { Table } from './table';
@@ -42,4 +43,5 @@ export {
   ToggleSwitch,
   TrackTabs,
   Typography,
+  Loader,
 };

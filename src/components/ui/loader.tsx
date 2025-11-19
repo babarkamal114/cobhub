@@ -1,8 +1,7 @@
 import clsx from 'clsx';
 
 import { LoaderProps } from '@/types/components';
-
-import { loaderVariants } from '../variants/loader-variants';
+import { loaderVariants } from 'variants';
 
 const Loader: React.FC<LoaderProps> = ({ size, classNames, thickness, color, ...props }) => {
   return (
@@ -39,4 +38,4 @@ const Loader: React.FC<LoaderProps> = ({ size, classNames, thickness, color, ...
 
 Loader.displayName = 'Loader';
 
-export default Loader;
+export { Loader };

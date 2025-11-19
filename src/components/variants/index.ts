@@ -7,6 +7,7 @@ import { checkboxVariants } from './checkbox-varaints';
 import { buttonIconVariants } from './icon-button-variants';
 import { iconboxVariants } from './iconbox-varaints';
 import { inputVariants } from './input-variants';
+import { loaderVariants } from './loader-variants';
 import { progressBarVaraints, progressWrapperVaraints } from './progress-varaints';
 import { radioVariants } from './radio-varaints';
 import { selectVariants } from './select-varaints';
@@ -37,4 +38,5 @@ export {
   textareaVariants,
   toggleSwitchVariants,
   typographyVariants,
+  loaderVariants,
 };
