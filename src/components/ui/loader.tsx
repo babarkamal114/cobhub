@@ -3,7 +3,17 @@ import clsx from 'clsx';
 import { LoaderProps } from '@/types/components';
 import { loaderVariants } from 'variants';
 
-const Loader: React.FC<LoaderProps> = ({ size, classNames, thickness, color, ...props }) => {
+import { thickness } from '../variants/loader-variants';
+
+const Loader: React.FC<LoaderProps> = ({
+  size,
+  classNames,
+  thickness: thicknessSize,
+  color,
+  ...props
+}) => {
+  const strockWidth = thicknessSize ? thickness[thicknessSize] : thickness.md;
+
   return (
     <span
       className={clsx(loaderVariants({ color, size }), classNames)}
@@ -18,7 +28,7 @@ const Loader: React.FC<LoaderProps> = ({ size, classNames, thickness, color, ...
           cy="25"
           r="20"
           stroke="currentColor"
-          strokeWidth={thickness}
+          strokeWidth={strockWidth}
         />
         <circle
           className="opacity-75"
@@ -26,7 +36,7 @@ const Loader: React.FC<LoaderProps> = ({ size, classNames, thickness, color, ...
           cy="25"
           r="20"
           stroke="currentColor"
-          strokeWidth={thickness}
+          strokeWidth={strockWidth}
           strokeDasharray="80"
           strokeDashoffset="60"
           strokeLinecap="round"

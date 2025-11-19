@@ -220,7 +220,7 @@ export interface TextAreaProps
 export interface LoaderProps
   extends Omit<React.HTMLAttributes<HTMLSpanElement>, 'color'>,
     VariantProps<typeof loaderVariants> {
-  thickness?: number;
+  thickness?: Size;
   size?: Size;
   color: Color;
   classNames?: string;

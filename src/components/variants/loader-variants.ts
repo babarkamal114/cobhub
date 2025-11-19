@@ -1,5 +1,7 @@
 import { cva } from 'class-variance-authority';
 
+import { Size } from '@/types';
+
 export const loaderVariants = cva(
   // Base classes - always applied
   'inline-block animate-spin',
@@ -35,3 +37,13 @@ export const loaderVariants = cva(
     },
   }
 );
+
+export const thickness: Record<Size, number> = {
+  xxxs: 1,
+  xxs: 2,
+  xs: 3,
+  sm: 4,
+  md: 5,
+  lg: 6,
+  xl: 8,
+};

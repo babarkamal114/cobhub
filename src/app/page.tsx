@@ -1,7 +1,7 @@
 'use client';
 
 import ThemeSwitch from '@/components/theme-toggle';
-import { Typography } from 'ui-components';
+import { Loader, Typography } from 'ui-components';
 
 export default function Home() {
   return (
@@ -16,6 +16,7 @@ export default function Home() {
           meetings, track performance, and streamline workflows—all in one place. Boost productivity
           and keep your team aligned effortlessly.
         </Typography>
+        <Loader size="xl" thickness="lg" color="info" />
       </div>
     </main>
   );
