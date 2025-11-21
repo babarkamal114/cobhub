@@ -1,8 +1,15 @@
 import type { IconifyIcon } from '@iconify/react';
 import { VariantProps } from 'class-variance-authority';
 import { LucideIcon } from 'lucide-react';
-import { ButtonHTMLAttributes, HTMLAttributes, ReactNode, TextareaHTMLAttributes } from 'react';
+import {
+  ButtonHTMLAttributes,
+  HTMLAttributes,
+  InputHTMLAttributes,
+  ReactNode,
+  TextareaHTMLAttributes,
+} from 'react';
 
+import { comboBoxVariants } from '@/components/variants/comboBox-variants';
 import { loaderVariants } from '@/components/variants/loader-variants';
 import {
   avatarVariants,
@@ -224,6 +231,32 @@ export interface LoaderProps
   size?: Size;
   color: Color;
   classNames?: string;
+}
+
+export interface ComboBoxItem {
+  id: string | number;
+  name: string;
+  icon?: IconifyIcon | string;
+  image?: string;
+  [key: string]: any;
+}
+
+export interface ComboBoxProps
+  extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size' | 'color' | 'onChange' | 'onSelect'>,
+    VariantProps<typeof comboBoxVariants> {
+  items: ComboBoxItem[]; // Array of selectable items
+  selected: ComboBoxItem | null; // Currently selected item
+  setSelected: (items: ComboBoxItem | null) => void; // Selection handler
+
+  // Optional props
+  label?: string; // Label above input
+  error?: string; // Error message
+  loading?: boolean; // Loading state
+  disabled?: boolean; // Disabled state
+  className?: string;
+  value?: any; // Custom wrapper classes
+  multiple?: boolean;
+  noResultText?: string;
 }
 
 export type Color =

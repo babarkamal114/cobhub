@@ -8,6 +8,7 @@ import { Card } from './card';
 import { Dropdown } from './dropdown';
 import { AdvancedToggleSwitch, Input, Radio, Select, Textarea, ToggleSwitch } from './form';
 import { Checkbox } from './form/checkbox';
+import { ComboBox } from './form/combo-box';
 import { IconBox } from './icon-box';
 import { IconButton } from './icon-button';
 import { Loader } from './loader';
@@ -44,4 +45,5 @@ export {
   TrackTabs,
   Typography,
   Loader,
+  ComboBox,
 };

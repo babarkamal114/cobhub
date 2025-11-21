@@ -4,6 +4,7 @@ import { breadcrumbVariants } from './breadcrumb-variants';
 import { buttonVariants } from './button-variants';
 import { cardVariants } from './card-variants';
 import { checkboxVariants } from './checkbox-varaints';
+import { comboBoxVariants } from './comboBox-variants';
 import { buttonIconVariants } from './icon-button-variants';
 import { iconboxVariants } from './iconbox-varaints';
 import { inputVariants } from './input-variants';
@@ -39,4 +40,5 @@ export {
   toggleSwitchVariants,
   typographyVariants,
   loaderVariants,
+  comboBoxVariants,
 };
