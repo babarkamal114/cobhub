@@ -10,6 +10,7 @@ import {
 } from 'react';
 
 import { comboBoxVariants } from '@/components/variants/comboBox-variants';
+import { pickerVariants } from '@/components/variants/datePicker-variants';
 import { loaderVariants } from '@/components/variants/loader-variants';
 import {
   avatarVariants,
@@ -60,11 +61,12 @@ export interface ButtonLinkProps
 }
 
 export interface InputProps
-  extends React.InputHTMLAttributes<HTMLInputElement>,
+  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'shape'>,
     VariantProps<typeof inputVariants> {
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
   error?: string;
+  shape?: Shape;
   success?: string;
   showPasswordToggle?: boolean;
   onClear?: () => void;
@@ -259,6 +261,22 @@ export interface ComboBoxProps
   noResultText?: string;
 }
 
+export interface DatePickerProps
+  extends Omit<React.HTMLProps<HTMLInputElement>, 'value' | 'shape' | 'color'>,
+    VariantProps<typeof pickerVariants> {
+  value?: Date;
+  valueFormat?: string;
+  icon?: ReactNode;
+  label?: string;
+  variant?: Variants | null;
+  inputSize?: InputSize;
+  placeholder?: string;
+  shape?: Shape | null;
+  minDate?: Date;
+  disabled?: boolean;
+  loading?: boolean;
+}
+
 export type Color =
   | 'default'
   | 'contrast'
@@ -269,6 +287,8 @@ export type Color =
   | 'warning'
   | 'danger';
 export type Shape = 'straight' | 'rounded' | 'smooth' | 'curved' | 'full';
+export type InputSize = 'sm' | 'md' | 'lg';
 export type Variant = 'solid' | 'pastel' | 'outlined';
 export type Size = 'xl' | 'lg' | 'md' | 'sm' | 'xs' | 'xxs' | 'xxxs';
 export type Mask = 'hex' | 'hexed' | 'blob' | 'deca' | 'diamond';
+export type Variants = 'default' | 'error' | 'success' | 'disabled' | 'loading';

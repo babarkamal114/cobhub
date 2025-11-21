@@ -21,10 +21,18 @@ export const inputVariants = cva(
         md: 'h-10 px-3 text-sm',
         lg: 'h-12 px-4 text-base',
       },
+      shape: {
+        straight: '',
+        rounded: 'rounded-md',
+        smooth: 'rounded-lg',
+        curved: 'rounded-xl',
+        full: 'rounded-full',
+      },
     },
     defaultVariants: {
       variant: 'default',
       inputSize: 'md',
+      shape: 'smooth',
     },
   }
 );
