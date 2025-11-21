@@ -93,6 +93,17 @@ export interface ModalProps {
   description?: string;
 }
 
+export interface MessageProps {
+  children?: React.ReactNode;
+  icon?: string | IconifyIcon;
+  label?: string;
+  variant?: Color;
+  shape?: Shape;
+  dismissible?: boolean;
+  onClose?: () => void;
+  className?: string;
+}
+
 export interface AlertProps {
   children?: React.ReactNode;
   icon?: string;

@@ -7,6 +7,7 @@ import { checkboxVariants } from './checkbox-varaints';
 import { buttonIconVariants } from './icon-button-variants';
 import { iconboxVariants } from './iconbox-varaints';
 import { inputVariants } from './input-variants';
+import { messageVariants, messageDismissButtonVariants } from './message-varaints';
 import { progressBarVaraints, progressWrapperVaraints } from './progress-varaints';
 import { radioVariants } from './radio-varaints';
 import { selectVariants } from './select-varaints';
@@ -27,6 +28,8 @@ export {
   dismissButtonVariants,
   iconboxVariants,
   inputVariants,
+  messageVariants,
+  messageDismissButtonVariants,
   progressBarVaraints,
   progressWrapperVaraints,
   radioVariants,

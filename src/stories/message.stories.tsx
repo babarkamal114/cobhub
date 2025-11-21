@@ -6,7 +6,7 @@ const meta: Meta<typeof Message> = {
   component: Message,
   tags: ['autodocs'],
   argTypes: {
-    color: {
+    variant: {
       control: { type: 'select' },
       options: [
         'default',
@@ -66,15 +66,14 @@ export const Colors: Story = {
   },
   render: args => (
     <div className="flex flex-row flex-wrap gap-4">
-      <Message {...args} color="default" label="Default color" />
-      <Message {...args} color="contrast" label="Contrast color" />
-      <Message {...args} color="muted" label="Muted color" />
-      <Message {...args} color="mutedContrast" label="Muted Contrast color" />
-      <Message {...args} color="primary" label="Primary color" />
-      <Message {...args} color="info" label="Info color" />
-      <Message {...args} color="success" label="Success color" />
-      <Message {...args} color="warning" label="Warning color" />
-      <Message {...args} color="danger" label="Danger color" />
+      <Message {...args} variant="default" label="Default color" />
+      <Message {...args} variant="contrast" label="Contrast color" />
+      <Message {...args} variant="muted" label="Muted color" />
+      <Message {...args} variant="primary" label="Primary color" />
+      <Message {...args} variant="info" label="Info color" />
+      <Message {...args} variant="success" label="Success color" />
+      <Message {...args} variant="warning" label="Warning color" />
+      <Message {...args} variant="danger" label="Danger color" />
     </div>
   ),
 };
@@ -105,24 +104,24 @@ export const ColorWithIcons: Story = {
     <div className="flex flex-row flex-wrap gap-4">
       <Message
         {...args}
-        color="success"
+        variant="success"
         icon="lucide:check-circle"
         label="Success with check icon"
       />
-      <Message {...args} color="info" icon="lucide:info" label="Info with info icon" />
+      <Message {...args} variant="info" icon="lucide:info" label="Info with info icon" />
       <Message
         {...args}
-        color="warning"
+        variant="warning"
         icon="lucide:alert-triangle"
         label="Warning with alert triangle"
       />
       <Message
         {...args}
-        color="danger"
+        variant="danger"
         icon="lucide:alert-circle"
         label="Danger with alert circle"
       />
-      <Message {...args} color="primary" icon="lucide:star" label="Primary with star icon" />
+      <Message {...args} variant="primary" icon="lucide:star" label="Primary with star icon" />
     </div>
   ),
 };
@@ -158,9 +157,9 @@ export const DismissibleExamples: Story = {
   },
   render: args => (
     <div className="flex flex-row flex-wrap gap-4">
-      <Message {...args} color="success" label="Success message" />
-      <Message {...args} color="warning" label="Warning message" />
-      <Message {...args} color="info" label="Info message" />
+      <Message {...args} variant="success" label="Success message" />
+      <Message {...args} variant="warning" label="Warning message" />
+      <Message {...args} variant="info" label="Info message" />
     </div>
   ),
 };
