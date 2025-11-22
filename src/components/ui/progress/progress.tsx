@@ -1,7 +1,7 @@
 import React, { type FC } from 'react';
 
 import { ProgressProps } from 'types';
-import { progressBarVaraints, progressWrapperVaraints } from 'variants';
+import { progressBarVariants, progressWrapperVariants } from 'variants';
 
 const ProgressBar: FC<ProgressProps> = ({
   color,
@@ -24,14 +24,14 @@ const ProgressBar: FC<ProgressProps> = ({
       aria-valuemax={max}
       aria-valuenow={computedValue}
       className={[
-        progressWrapperVaraints({ size, shape, contrast }),
+        progressWrapperVariants({ size, shape, contrast }),
         Array.isArray(classNames) ? classNames.join(' ') : classNames,
       ]
         .filter(Boolean)
         .join(' ')}
     >
       <div
-        className={progressBarVaraints({ color, shape, indeterminate: isIndeterminate })}
+        className={progressBarVariants({ color, shape, indeterminate: isIndeterminate })}
         style={{
           width: computedValue !== undefined ? `${(computedValue / max) * 100}%` : undefined,
         }}

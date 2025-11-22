@@ -1,6 +1,6 @@
 import { cva } from 'class-variance-authority';
 
-export const progressWrapperVaraints = cva('relative w-full overflow-hidden', {
+export const progressWrapperVariants = cva('relative w-full overflow-hidden', {
   variants: {
     size: {
       sm: 'h-1.5',
@@ -30,7 +30,7 @@ export const progressWrapperVaraints = cva('relative w-full overflow-hidden', {
   },
 });
 
-export const progressBarVaraints = cva(
+export const progressBarVariants = cva(
   'absolute start-0 top-0 h-full transition-all duration-300',
   {
     variants: {
