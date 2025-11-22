@@ -18,17 +18,10 @@ import {
 } from 'date-fns';
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
-import {
-  colStartClasses,
-  dayLabels,
-  months,
-  numberRegex,
-  pickerVariants,
-} from '@/components/variants/datePicker-variants';
-import { useOnClickOutside } from '@/hooks';
 import { cn } from '@/lib/utils';
-import { Shape } from '@/types';
-import { DatePickerProps } from '@/types/components';
+import { useOnClickOutside } from 'hooks';
+import { Shape, DatePickerProps } from 'types';
+import { colStartClasses, dayLabels, months, numberRegex, pickerVariants } from 'variants';
 
 import { Button } from '../button';
 
