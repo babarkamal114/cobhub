@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { ToggleSwitch } from 'ui-components';
 
 const meta: Meta<typeof ToggleSwitch> = {
-  title: 'UI/ToggleSwitch',
+  title: 'UI/Form/ToggleSwitch',
   component: ToggleSwitch,
   argTypes: {
     color: {
