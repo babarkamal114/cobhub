@@ -146,7 +146,7 @@ export interface ProgressProps {
   contrast?: 'default' | 'contrast';
   shape?: Shape;
   size?: Size;
-  strockSize?: number;
+  strokeSize?: number;
   value?: number;
   max?: number;
   thickness?: number;

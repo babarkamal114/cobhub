@@ -9,7 +9,7 @@ import { buttonIconVariants } from './icon-button-variants';
 import { iconboxVariants } from './iconbox-varaints';
 import { inputVariants } from './input-variants';
 import { loaderVariants } from './loader-variants';
-import { progressBarVaraints, progressWrapperVaraints } from './progress-varaints';
+import { progressBarVariants, progressWrapperVariants } from './progress-variants';
 import { radioVariants } from './radio-varaints';
 import { selectVariants } from './select-varaints';
 import { tabListStyles, tabStyles } from './tab-variants';
@@ -29,8 +29,8 @@ export {
   dismissButtonVariants,
   iconboxVariants,
   inputVariants,
-  progressBarVaraints,
-  progressWrapperVaraints,
+  progressBarVariants,
+  progressWrapperVariants,
   radioVariants,
   selectVariants,
   tabListStyles,

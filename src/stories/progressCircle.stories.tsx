@@ -9,7 +9,7 @@ const meta: Meta<typeof ProgressCircle> = {
   args: {
     value: 75,
     max: 100,
-    strockSize: 60,
+    strokeSize: 60,
     thickness: 4,
     color: 'primary',
     contrast: 'default',
@@ -27,10 +27,10 @@ export const Default: Story = {};
 export const CircleSizes: Story = {
   render: () => (
     <div className="flex gap-4 items-center">
-      <ProgressCircle color="default" strockSize={40} value={60} />
-      <ProgressCircle strockSize={60} value={60} />
-      <ProgressCircle strockSize={80} value={60} />
-      <ProgressCircle strockSize={100} value={60} />
+      <ProgressCircle color="default" strokeSize={40} value={60} />
+      <ProgressCircle strokeSize={60} value={60} />
+      <ProgressCircle strokeSize={80} value={60} />
+      <ProgressCircle strokeSize={100} value={60} />
     </div>
   ),
 };

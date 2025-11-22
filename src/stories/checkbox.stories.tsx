@@ -4,7 +4,7 @@ import { Checkbox } from 'ui-components';
 
 const meta: Meta<typeof Checkbox> = {
   component: Checkbox,
-  title: 'UI/Checkbox',
+  title: 'UI/Form/Checkbox',
   tags: ['autodocs'],
   argTypes: {
     color: {
