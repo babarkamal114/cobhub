@@ -4,10 +4,9 @@ import { Combobox, Transition } from '@headlessui/react';
 import { Icon } from '@iconify/react';
 import React, { type FC, Fragment, useCallback, useMemo, useState } from 'react';
 
-import { comboBoxVariants } from '@/components/variants/comboBox-variants';
 import { cn } from '@/lib/utils';
-import { Shape } from '@/types';
-import { ComboBoxProps } from '@/types/components';
+import { Shape, ComboBoxProps } from 'types';
+import { comboBoxVariants } from 'variants';
 
 import Avatar from '../avatar';
 import { Loader } from '../loader';
