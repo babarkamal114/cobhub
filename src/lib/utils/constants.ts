@@ -1,3 +1,4 @@
+import { InputSize } from '@/types/components';
 import { Size } from 'types';
 
 export const sizes: Record<Size, number> = {
@@ -18,6 +19,12 @@ export const spacing: Record<Size, string> = {
   xs: '-space-x-3',
   xxs: '-space-x-2',
   xxxs: '-space-x-1.5',
+};
+
+export const inputSizes: Record<InputSize, number> = {
+  sm: 36, // h-9
+  md: 40, // h-10
+  lg: 48, // h-12
 };
 
 export const RADIUS = 15.91549431;

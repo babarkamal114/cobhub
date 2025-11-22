@@ -5,7 +5,7 @@ import { Table } from '@/components/ui/table';
 import { Button } from 'ui-components';
 
 const meta: Meta<typeof Table> = {
-  title: 'UI/Table',
+  title: 'UI/Table/Table',
   component: Table.Root,
   tags: ['autodocs'],
 };

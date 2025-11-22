@@ -4,7 +4,7 @@ import React from 'react';
 import { Input } from 'ui-components';
 
 export default {
-  title: 'UI/Input',
+  title: 'UI/Form/Input',
   component: Input,
   argTypes: {
     leftIcon: { control: 'node' },
