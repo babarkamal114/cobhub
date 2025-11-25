@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Radio } from 'ui-components';
 
 const meta: Meta<typeof Radio> = {
-  title: 'UI/Radio',
+  title: 'UI/Form/Radio',
   component: Radio,
   tags: ['autodocs'],
   argTypes: {

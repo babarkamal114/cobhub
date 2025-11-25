@@ -2,7 +2,8 @@ import { Icon } from '@iconify/react';
 import React, { FC, useEffect, useRef, useState } from 'react';
 
 import { ToggleBoxProps } from 'types';
-import { Card } from 'ui-components';
+
+import { Card } from './card';
 
 const ToggleBox: FC<ToggleBoxProps> = ({
   header,

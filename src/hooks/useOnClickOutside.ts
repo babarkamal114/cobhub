@@ -20,3 +20,7 @@ const useOnClickOutside = (ref: React.RefObject<HTMLElement | null>, handler: ()
 };
 
 export default useOnClickOutside;
+
+//this is how you can use it like for dropdownns , menus etc
+
+// useonclickoutside(somethingRef , () => setIsOpen(false))
