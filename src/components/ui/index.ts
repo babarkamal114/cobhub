@@ -12,6 +12,7 @@ import { ComboBox } from './form/combo-box';
 import { IconBox } from './icon-box';
 import { IconButton } from './icon-button';
 import { Loader } from './loader';
+import { Message } from './message';
 import { Modal } from './modal';
 import { TrackTabs } from './tab';
 import { Table } from './table';
@@ -33,6 +34,7 @@ export {
   IconBox,
   IconButton,
   Input,
+  Message,
   Modal,
   Radio,
   RangeSlider,

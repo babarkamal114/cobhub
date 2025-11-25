@@ -16,6 +16,7 @@ import { buttonIconVariants } from './icon-button-variants';
 import { iconboxVariants } from './iconbox-variants';
 import { inputVariants } from './input-variants';
 import { loaderVariants } from './loader-variants';
+import { messageVariants, messageDismissButtonVariants } from './message-varaints';
 import { progressBarVariants, progressWrapperVariants } from './progress-variants';
 import { radioVariants } from './radio-variants';
 import { selectVariants } from './select-variants';
@@ -39,6 +40,8 @@ export {
   dismissButtonVariants,
   iconboxVariants,
   inputVariants,
+  messageVariants,
+  messageDismissButtonVariants,
   loaderVariants,
   months,
   numberRegex,
