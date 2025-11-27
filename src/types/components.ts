@@ -226,6 +226,13 @@ export interface TextAreaProps
   shape?: Shape;
 }
 
+export interface TooltipProps {
+  content: string | React.ReactNode;
+  children: React.ReactNode;
+  position?: 'top' | 'bottom' | 'start' | 'end';
+  className?: string;
+}
+
 export interface LoaderProps
   extends Omit<React.HTMLAttributes<HTMLSpanElement>, 'color'>,
     VariantProps<typeof loaderVariants> {

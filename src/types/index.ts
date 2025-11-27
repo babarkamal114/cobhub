@@ -20,6 +20,7 @@ import {
   ToggleBoxProps,
   ToggleSwitchProps,
   TrackTabsProps,
+  TooltipProps,
   Variant,
 } from './components';
 import { Sizes } from './theme';
@@ -47,5 +48,6 @@ export type {
   ToggleBoxProps,
   ToggleSwitchProps,
   TrackTabsProps,
+  TooltipProps,
   Variant,
 };
