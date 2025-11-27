@@ -3,6 +3,7 @@ import { VariantProps } from 'class-variance-authority';
 import { LucideIcon } from 'lucide-react';
 import { ButtonHTMLAttributes, HTMLAttributes, ReactNode, TextareaHTMLAttributes } from 'react';
 
+import { listBoxVarients } from '@/components/variants/listbox-varients';
 import {
   avatarVariants,
   buttonVariants,
@@ -214,6 +215,27 @@ export interface TextAreaProps
   loading?: boolean;
   color?: Color;
   shape?: Shape;
+}
+
+export interface ListBoxItems {
+  id?: string;
+  name?: string;
+  icon?: IconifyIcon | string;
+  image?: string;
+}
+
+export interface ListBoxProps
+  extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'size'>,
+    VariantProps<typeof listBoxVarients> {
+  selected?: ListBoxItems | null;
+  label?: string;
+  multiple?: boolean;
+  error?: string;
+  setSelected?: (item: ListBoxItems | ListBoxItems[] | null) => void;
+  disabled?: boolean;
+  items?: ListBoxItems[] | null;
+  loading?: boolean;
+  classNames?: string;
 }
 
 export type Color =
