@@ -21,12 +21,14 @@ import {
   ToggleSwitchProps,
   TrackTabsProps,
   Variant,
+  ListBoxProps,
 } from './components';
 import { Sizes } from './theme';
 
 export type {
   AlertProps,
   AvatarProps,
+  ListBoxProps,
   BreadcrumbProps,
   ButtonLinkProps,
   ButtonProps,

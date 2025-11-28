@@ -29,3 +29,27 @@ export const inputSizes: Record<InputSize, number> = {
 
 export const RADIUS = 15.91549431;
 export const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+
+export const SIZE_CLASSES = {
+  sm: {
+    container: 'h-8 w-8',
+    icon: 'h-3 w-3',
+  },
+  md: {
+    container: 'h-10 w-10',
+    icon: 'h-4 w-4',
+  },
+  lg: {
+    container: 'h-12 w-12',
+    icon: 'h-5 w-5',
+  },
+} as const;
+
+// Shape mappings
+export const SHAPE_CLASSES = {
+  straight: '',
+  rounded: 'rounded-md',
+  smooth: 'rounded-lg',
+  curved: 'rounded-xl',
+  full: 'rounded-xl',
+} as const;

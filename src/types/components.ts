@@ -9,9 +9,12 @@ import {
   TextareaHTMLAttributes,
 } from 'react';
 
+
+import { listBoxVarients } from '@/components/variants/listbox-varients';
 import { comboBoxVariants } from '@/components/variants/comboBox-variants';
 import { pickerVariants } from '@/components/variants/datePicker-variants';
 import { loaderVariants } from '@/components/variants/loader-variants';
+
 import {
   avatarVariants,
   buttonVariants,
@@ -226,6 +229,27 @@ export interface TextAreaProps
   shape?: Shape;
 }
 
+
+export interface ListBoxItems {
+  id?: string;
+  name?: string;
+  icon?: IconifyIcon | string;
+  image?: string;
+}
+
+export interface ListBoxProps
+  extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'size'>,
+    VariantProps<typeof listBoxVarients> {
+  selected?: ListBoxItems | null;
+  label?: string;
+  multiple?: boolean;
+  error?: string;
+  setSelected?: (item: ListBoxItems | ListBoxItems[] | null) => void;
+  disabled?: boolean;
+  items?: ListBoxItems[] | null;
+  loading?: boolean;
+  classNames?: string;
+
 export interface LoaderProps
   extends Omit<React.HTMLAttributes<HTMLSpanElement>, 'color'>,
     VariantProps<typeof loaderVariants> {
@@ -275,6 +299,7 @@ export interface DatePickerProps
   minDate?: Date;
   disabled?: boolean;
   loading?: boolean;
+
 }
 
 export type Color =
