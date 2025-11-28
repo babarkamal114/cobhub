@@ -6,7 +6,15 @@ import { Button } from './button';
 import { ButtonLink } from './button-link';
 import { Card } from './card';
 import { Dropdown } from './dropdown';
-import { AdvancedToggleSwitch, Input, Radio, Select, Textarea, ToggleSwitch } from './form';
+import {
+  AdvancedToggleSwitch,
+  Input,
+  Radio,
+  Select,
+  Textarea,
+  ToggleSwitch,
+  InputOTP,
+} from './form';
 import { Checkbox } from './form/checkbox';
 import { ComboBox } from './form/combo-box';
 import { IconBox } from './icon-box';
@@ -20,6 +28,7 @@ import { ToggleBox } from './toggle-box';
 import { Typography } from './typography';
 
 export {
+  InputOTP,
   AdvancedToggleSwitch,
   Alert,
   Avatar,

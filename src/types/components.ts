@@ -11,6 +11,7 @@ import {
 
 import { comboBoxVariants } from '@/components/variants/comboBox-variants';
 import { pickerVariants } from '@/components/variants/datePicker-variants';
+import { inputOTPVariants } from '@/components/variants/input-otp-variants';
 import { loaderVariants } from '@/components/variants/loader-variants';
 import {
   avatarVariants,
@@ -275,6 +276,14 @@ export interface DatePickerProps
   minDate?: Date;
   disabled?: boolean;
   loading?: boolean;
+}
+
+export interface InputOTPProps extends VariantProps<typeof inputOTPVariants> {
+  value?: string;
+  valueLength?: number | undefined;
+  onChange?: (item: string) => void;
+  variant?: Variants;
+  shape?: Shape | undefined;
 }
 
 export type Color =

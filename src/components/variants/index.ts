@@ -14,6 +14,7 @@ import {
 } from './datePicker-variants';
 import { buttonIconVariants } from './icon-button-variants';
 import { iconboxVariants } from './iconbox-variants';
+import { inputOTPVariants } from './input-otp-variants';
 import { inputVariants } from './input-variants';
 import { loaderVariants } from './loader-variants';
 import { progressBarVariants, progressWrapperVariants } from './progress-variants';
@@ -24,8 +25,8 @@ import { tagVariants } from './tag-variants';
 import { textareaVariants } from './text-area-variants';
 import { toggleSwitchVariants } from './toggle-switch-variants';
 import { typographyVariants } from './typography-variants';
-
 export {
+  inputOTPVariants,
   alertVariants,
   avatarVariants,
   breadcrumbVariants,
