@@ -12,7 +12,7 @@ const iconMap = {
 };
 
 export default {
-  title: 'UI/Dropdown',
+  title: 'UI/Form/Dropdown',
   component: Dropdown,
   argTypes: {
     title: { control: 'text' },

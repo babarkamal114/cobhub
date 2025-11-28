@@ -1,9 +1,20 @@
 import type { IconifyIcon } from '@iconify/react';
 import { VariantProps } from 'class-variance-authority';
 import { LucideIcon } from 'lucide-react';
-import { ButtonHTMLAttributes, HTMLAttributes, ReactNode, TextareaHTMLAttributes } from 'react';
+import {
+  ButtonHTMLAttributes,
+  HTMLAttributes,
+  InputHTMLAttributes,
+  ReactNode,
+  TextareaHTMLAttributes,
+} from 'react';
+
 
 import { listBoxVarients } from '@/components/variants/listbox-varients';
+import { comboBoxVariants } from '@/components/variants/comboBox-variants';
+import { pickerVariants } from '@/components/variants/datePicker-variants';
+import { loaderVariants } from '@/components/variants/loader-variants';
+
 import {
   avatarVariants,
   buttonVariants,
@@ -53,11 +64,12 @@ export interface ButtonLinkProps
 }
 
 export interface InputProps
-  extends React.InputHTMLAttributes<HTMLInputElement>,
+  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'shape'>,
     VariantProps<typeof inputVariants> {
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
   error?: string;
+  shape?: Shape;
   success?: string;
   showPasswordToggle?: boolean;
   onClear?: () => void;
@@ -137,7 +149,7 @@ export interface ProgressProps {
   contrast?: 'default' | 'contrast';
   shape?: Shape;
   size?: Size;
-  strockSize?: number;
+  strokeSize?: number;
   value?: number;
   max?: number;
   thickness?: number;
@@ -217,6 +229,7 @@ export interface TextAreaProps
   shape?: Shape;
 }
 
+
 export interface ListBoxItems {
   id?: string;
   name?: string;
@@ -236,6 +249,57 @@ export interface ListBoxProps
   items?: ListBoxItems[] | null;
   loading?: boolean;
   classNames?: string;
+
+export interface LoaderProps
+  extends Omit<React.HTMLAttributes<HTMLSpanElement>, 'color'>,
+    VariantProps<typeof loaderVariants> {
+  thickness?: Size;
+  size?: Size;
+  color: Color;
+  classNames?: string;
+}
+
+export interface ComboBoxItem {
+  id: string | number;
+  name: string;
+  icon?: IconifyIcon | string;
+  image?: string;
+  [key: string]: any;
+}
+
+export interface ComboBoxProps
+  extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size' | 'color' | 'onChange' | 'onSelect'>,
+    VariantProps<typeof comboBoxVariants> {
+  items: ComboBoxItem[]; // Array of selectable items
+  selected: ComboBoxItem | null; // Currently selected item
+  setSelected: (items: ComboBoxItem | null) => void; // Selection handler
+
+  // Optional props
+  label?: string; // Label above input
+  error?: string; // Error message
+  loading?: boolean; // Loading state
+  disabled?: boolean; // Disabled state
+  className?: string;
+  value?: any; // Custom wrapper classes
+  multiple?: boolean;
+  noResultText?: string;
+}
+
+export interface DatePickerProps
+  extends Omit<React.HTMLProps<HTMLInputElement>, 'value' | 'shape' | 'color'>,
+    VariantProps<typeof pickerVariants> {
+  value?: Date;
+  valueFormat?: string;
+  icon?: ReactNode;
+  label?: string;
+  variant?: Variants | null;
+  inputSize?: InputSize;
+  placeholder?: string;
+  shape?: Shape | null;
+  minDate?: Date;
+  disabled?: boolean;
+  loading?: boolean;
+
 }
 
 export type Color =
@@ -248,6 +312,8 @@ export type Color =
   | 'warning'
   | 'danger';
 export type Shape = 'straight' | 'rounded' | 'smooth' | 'curved' | 'full';
+export type InputSize = 'sm' | 'md' | 'lg';
 export type Variant = 'solid' | 'pastel' | 'outlined';
 export type Size = 'xl' | 'lg' | 'md' | 'sm' | 'xs' | 'xxs' | 'xxxs';
 export type Mask = 'hex' | 'hexed' | 'blob' | 'deca' | 'diamond';
+export type Variants = 'default' | 'error' | 'success' | 'disabled' | 'loading';

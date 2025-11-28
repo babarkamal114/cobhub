@@ -22,6 +22,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       label,
       labelFor,
       type,
+      shape,
       ...props
     },
     ref
@@ -53,6 +54,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
               inputVariants({
                 variant: error ? 'error' : success ? 'success' : variant,
                 inputSize,
+                shape,
               }),
               leftIcon && 'pl-10',
               (rightIcon || showPasswordToggle || (showClearButton && hasValue)) && 'pr-10',
