@@ -17,6 +17,7 @@ import { TrackTabs } from './tab';
 import { Table } from './table';
 import { Tag } from './tag';
 import { ToggleBox } from './toggle-box';
+import { Tooltip } from './tooltip';
 import { Typography } from './typography';
 
 export {
@@ -44,6 +45,7 @@ export {
   ToggleSwitch,
   TrackTabs,
   Typography,
+  Tooltip,
   Loader,
   ComboBox,
 };

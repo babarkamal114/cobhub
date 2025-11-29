@@ -23,8 +23,13 @@ import { tabListStyles, tabStyles } from './tab-variants';
 import { tagVariants } from './tag-variants';
 import { textareaVariants } from './text-area-variants';
 import { toggleSwitchVariants } from './toggle-switch-variants';
+import {
+  tooltipVariants,
+  tooltipWrapperVariants,
+  tooltipChildrenVariants,
+  tooltipContentVariants,
+} from './tooltip-variants';
 import { typographyVariants } from './typography-variants';
-
 export {
   alertVariants,
   avatarVariants,
@@ -53,4 +58,8 @@ export {
   textareaVariants,
   toggleSwitchVariants,
   typographyVariants,
+  tooltipVariants,
+  tooltipWrapperVariants,
+  tooltipChildrenVariants,
+  tooltipContentVariants,
 };
