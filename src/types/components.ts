@@ -226,11 +226,10 @@ export interface TextAreaProps
   shape?: Shape;
 }
 
-export interface TooltipProps {
-  content: string | React.ReactNode;
+export interface TooltipProps extends React.HTMLAttributes<HTMLDivElement> {
+  tooltipContent: string | React.ReactNode;
   children: React.ReactNode;
   position?: 'top' | 'bottom' | 'start' | 'end';
-  className?: string;
 }
 
 export interface LoaderProps

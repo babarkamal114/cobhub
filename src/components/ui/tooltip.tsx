@@ -8,11 +8,17 @@ import {
   tooltipContentVariants,
 } from 'variants';
 
-const Tooltip: FC<TooltipProps> = ({ children, content, position = 'top', className }) => {
+const Tooltip: FC<TooltipProps> = ({
+  tooltipContent,
+  children,
+  position = 'top',
+  className,
+  ...props
+}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className={tooltipWrapperVariants()}>
+    <div className={tooltipWrapperVariants()} {...props}>
       <div
         className={tooltipChildrenVariants()}
         onMouseEnter={() => setIsHovered(true)}
@@ -27,12 +33,10 @@ const Tooltip: FC<TooltipProps> = ({ children, content, position = 'top', classN
       </div>
 
       {isHovered && (
-        <div
-          className={tooltipVariants({ position, className })}
-          role="tooltip"
-          id="tooltip-content"
-        >
-          <div className={tooltipContentVariants()}>{content}</div>
+        <div className={tooltipVariants({ position, className })} role="tooltip">
+          <div id="tooltip-content" className={tooltipContentVariants()}>
+            {tooltipContent}
+          </div>
         </div>
       )}
     </div>
