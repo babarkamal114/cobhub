@@ -277,6 +277,12 @@ export interface DatePickerProps
   loading?: boolean;
 }
 
+export interface GroupProps extends React.HTMLAttributes<HTMLDivElement> {
+  children?: React.ReactNode;
+  orientation?: 'horizontal' | 'vertical';
+  spacing?: 'none' | 'xs' | 'sm' | 'md' | 'lg';
+}
+
 export type Color =
   | 'default'
   | 'contrast'

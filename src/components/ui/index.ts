@@ -9,6 +9,7 @@ import { Dropdown } from './dropdown';
 import { AdvancedToggleSwitch, Input, Radio, Select, Textarea, ToggleSwitch } from './form';
 import { Checkbox } from './form/checkbox';
 import { ComboBox } from './form/combo-box';
+import { Group } from './group';
 import { IconBox } from './icon-box';
 import { IconButton } from './icon-button';
 import { Loader } from './loader';
@@ -18,7 +19,6 @@ import { Table } from './table';
 import { Tag } from './tag';
 import { ToggleBox } from './toggle-box';
 import { Typography } from './typography';
-
 export {
   AdvancedToggleSwitch,
   Alert,
@@ -46,4 +46,5 @@ export {
   Typography,
   Loader,
   ComboBox,
+  Group,
 };

@@ -21,6 +21,7 @@ import {
   ToggleSwitchProps,
   TrackTabsProps,
   Variant,
+  GroupProps,
 } from './components';
 import { Sizes } from './theme';
 
@@ -48,4 +49,5 @@ export type {
   ToggleSwitchProps,
   TrackTabsProps,
   Variant,
+  GroupProps,
 };
