@@ -12,6 +12,7 @@ import {
   numberRegex,
   pickerVariants,
 } from './datePicker-variants';
+import { groupVariants, groupElementClasses } from './group-variants';
 import { buttonIconVariants } from './icon-button-variants';
 import { iconboxVariants } from './iconbox-variants';
 import { inputVariants } from './input-variants';
@@ -24,7 +25,6 @@ import { tagVariants } from './tag-variants';
 import { textareaVariants } from './text-area-variants';
 import { toggleSwitchVariants } from './toggle-switch-variants';
 import { typographyVariants } from './typography-variants';
-
 export {
   alertVariants,
   avatarVariants,
@@ -53,4 +53,6 @@ export {
   textareaVariants,
   toggleSwitchVariants,
   typographyVariants,
+  groupVariants,
+  groupElementClasses,
 };
